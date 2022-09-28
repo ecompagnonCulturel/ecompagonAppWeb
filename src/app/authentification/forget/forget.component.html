@@ -1,0 +1,59 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="login"></ion-back-button>
+        </ion-buttons>
+        <ion-title size="small">
+            Paramètres de réinitialisation
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+    <div>
+
+        <div>
+            <form (ngSubmit)="init()" [formGroup]="forget">
+                <div class="input-group">
+                    <div *ngIf="message!=null" class="message" class="message">
+                        {{message}}
+                    </div>
+
+                    <ion-item>
+                        <ion-input type="text" placeholder="prenom.nom@uqtr.ca" formControlName="mailUsers"
+                                   class="lowerInput"></ion-input>
+                    </ion-item>
+                    <div *ngIf="(mailUsers.dirty || mailUsers.touched) && mailUsers.errors" class="errors">
+                        <span *ngIf="mailUsers.errors?.required||mailUsers.errors?.invalidMail||mailUsers.errors?.email">Couriel de l'uqtr</span>
+                    </div>
+
+                </div>
+
+
+                <div>
+                    <div class="left">
+                        <ion-button size="small" color="secondary" type="button" routerLink="">
+              <span class="material-icons">
+                update_disabled
+                </span>
+                            Annuler
+                        </ion-button>
+                    </div>
+                    <div class="right">
+                        <ion-button type="submit" [disabled]="!forget.valid" size="small" color="primary">
+          <span class="material-icons">
+            save
+            </span>
+                            Valider
+                        </ion-button>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+   <!-- <ion-button color="secondary" type="button" expand="block" (click)="callInitPage()" *ngIf="account==true">
+        initialise password
+    </ion-button>-->
+</ion-content>

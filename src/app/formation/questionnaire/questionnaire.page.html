@@ -1,0 +1,341 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="home"></ion-back-button>
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title> Questionnaire</ion-title>
+    </ion-toolbar>
+
+</ion-header>
+<ion-content class="ion-padding">
+    <div class="introduction" *ngIf="taille>0" >
+        <ion-label>
+            {{introduction}}
+            <span text-wrap *ngIf="(typeQ=='T11')|| (typeQ=='T12')">en déplaçant le curseur sur le segment proposé</span>:
+
+        </ion-label>
+    </div>
+    <form (ngSubmit)="sendResponse()"  [formGroup]="questionnaireForm" *ngIf="taille>0">
+
+
+          <div *ngFor="let q of questionnaire,let i=index ">
+              <ion-list *ngIf="q.question.questType=='text'" >
+                  <ion-label class="label" [color]="questionnaireForm.controls[q.question.id].valid? 'dark':'danger'" *ngIf="q.questionnaire.type=='T0'||q.questionnaire.type=='T3'&& q.questionnaire.type!=='T11'" class="label" position="stacked">
+                      {{q.questOrdre}}.  {{q.question.questDesc}}</ion-label>
+                  <ion-label class="label" [color]="questionnaireForm.controls[q.question.id].valid? 'dark':'danger'" *ngIf="q.questionnaire.type==='T11'" class="label" position="stacked">
+                       {{q.questOrdre-2}}.  {{q.question.questDesc}}</ion-label>
+
+                      <ion-textarea *ngIf="mode=='ios'" class="ion-grid-ion-textarea" placeholder="réponse" rows="6" cols="20" [formControlName]="q.question.id"  [ngStyle]="{'border-color':questionnaireForm.controls[q.question.id].valid? 'primary':'danger'}" ></ion-textarea>
+                        <ion-textarea *ngIf="mode=='md'"  placeholder="réponse" rows="6" cols="20" [formControlName]="q.question.id"  [ngStyle]="{'border-color':questionnaireForm.controls[q.question.id].valid? 'primary':'danger'}" ></ion-textarea>
+
+              </ion-list>
+            <ion-list *ngIf="q.question.questType=='radio'">
+                    <ion-label *ngIf="q.questionnaire.type!=='T11'" [color]="questionnaireForm.controls[q.question.id].valid? 'dark':'danger'" class="label ion-text-wrap" position="stacked"> {{q.questOrdre}}. {{q.question.questDesc}}
+                    </ion-label>
+                <ion-label *ngIf="q.questionnaire.type=='T11'" [color]="questionnaireForm.controls[q.question.id].valid? 'dark':'danger'" class="label ion-text-wrap" position="stacked"> {{q.questOrdre-2}}. {{q.question.questDesc}}
+                </ion-label>
+                <ion-radio-group formControlName="{{q.question.id}}" (ionChange)="radioChange(q.question,$event)" >
+                    <!--<ion-list-header>  </ion-list-header>-->
+                    <ion-item *ngFor="let r of q.question.questModalite ">
+                        <ion-label class="smallLabel">{{r.value}}</ion-label>
+                        <div style="position: relative">
+                            <ion-radio value="{{r.value}}" *ngIf="mode=='ios'" class="ios-ion-radio"></ion-radio>
+                            <ion-radio value="{{r.value}}" *ngIf="mode=='md'"></ion-radio>
+                        </div>
+
+                    </ion-item>
+                </ion-radio-group>
+            </ion-list>
+
+            <ion-list *ngIf="(q.question.questType=='likert5' && q.questionnaire.type=='T0')||(q.question.questType=='likert5' &&q.questionnaire.type=='T3')">
+                <ion-label *ngIf="q.question.questDesc!=='' && q.questionnaire.type!='T11'" class="label"
+                           position="stacked">{{q.questOrdre}}.  {{q.question.questDesc}}</ion-label>
+                <ion-label *ngIf="q.question.questDesc!=='' && q.questionnaire.type=='T11'" class="label"
+                           position="stacked">{{q.questOrdre-2}}.  {{q.question.questDesc}}</ion-label>
+                      <div *ngFor="let r of q.question.questModalite, let i = index" class="totalwidth">
+                        <ion-label class="space ion-text-wrap" position="stacked" [color]="questionnaireForm.controls[q.question.id].valid? 'dark':'danger'"
+                        >{{r.value}}</ion-label>
+                        <!-- <mat-slider max="5" min="1" step="0.5"></mat-slider>-->
+                       <div>
+                           <ion-radio-group formControlName="{{q.question.id}}">
+                               <ion-grid *ngIf="mode=='ios'" class="ion-grid-ion-textarea">
+                                   <ion-row>
+                                       <ion-col>
+                                           Pas du tout
+                                       </ion-col>
+                                       <ion-col>
+                                           Un Peu
+                                       </ion-col>
+                                       <ion-col>
+                                           Moyennement
+                                       </ion-col>
+                                       <ion-col>
+                                           Vraiment
+                                       </ion-col>
+
+                                       <ion-col>
+                                           Extrêmement
+                                       </ion-col>
+                                   </ion-row>
+                                   <ion-row>
+                                       <ion-col>
+                                           <ion-radio value="Pas du tout" *ngIf="mode=='ios'" class="ios-ion-radio"></ion-radio>
+                                       </ion-col>
+                                       <ion-col>
+                                           <ion-radio value="Un peu" *ngIf="mode=='ios'" class="ios-ion-radio"></ion-radio>
+                                       </ion-col>
+                                       <ion-col>
+                                           <ion-radio value="Moyennement" *ngIf="mode=='ios'" class="ios-ion-radio"></ion-radio>
+                                       </ion-col>
+                                       <ion-col>
+                                           <ion-radio value="Vraiment" *ngIf="mode=='ios'" class="ios-ion-radio"></ion-radio>
+                                       </ion-col>
+                                       <ion-col>
+                                           <ion-radio value="Extrêmement" *ngIf="mode=='ios'" class="ios-ion-radio"></ion-radio>
+                                       </ion-col>
+                                   </ion-row>
+                               </ion-grid>
+                               <ion-grid *ngIf="mode=='md'" >
+                                   <ion-row>
+                                       <ion-col>
+                                           Pas du tout
+                                       </ion-col>
+                                       <ion-col>
+                                           Un Peu
+                                       </ion-col>
+                                       <ion-col>
+                                           Moyennement
+                                       </ion-col>
+                                       <ion-col>
+                                           Vraiment
+                                       </ion-col>
+
+                                       <ion-col>
+                                           Extrêmement
+                                       </ion-col>
+                                   </ion-row>
+                                   <ion-row>
+                                       <ion-col>
+                                           <ion-radio value="Pas du tout"  *ngIf="mode=='md'"></ion-radio>
+                                       </ion-col>
+                                       <ion-col>
+                                           <ion-radio value="Un peu"  *ngIf="mode=='md'"></ion-radio>
+                                       </ion-col>
+                                       <ion-col>
+                                           <ion-radio value="Moyennement"  *ngIf="mode=='md'"></ion-radio>
+                                       </ion-col>
+                                       <ion-col>
+                                           <ion-radio value="Vraiment"  *ngIf="mode=='md'"></ion-radio>
+                                       </ion-col>
+                                       <ion-col>
+                                           <ion-radio value="Extrêmement" *ngIf="mode=='md'"></ion-radio>
+                                       </ion-col>
+                                   </ion-row>
+                               </ion-grid>
+                                </ion-radio-group >
+
+                        </div>
+                    </div>
+            </ion-list>
+              <ion-list *ngIf="q.question.questType=='likert5' && q.questionnaire.type=='T2'">
+                  <ion-label *ngIf="q.question.questDesc!=='' &&  q.questionnaire.type!=='T11'" class="label"
+                             position="stacked" [color]="questionnaireForm.controls[q.question.id].valid? 'dark':'danger'"
+                  >{{q.questOrdre}}.  {{q.question.questDesc}}</ion-label>
+                  <ion-label *ngIf="q.question.questDesc!=='' && q.questionnaire.type=='T11'" class="label"
+                             position="stacked" [color]="questionnaireForm.controls[q.question.id].valid? 'dark':'danger'"
+                  >{{q.questOrdre-2}}.  {{q.question.questDesc}}</ion-label>
+                       <div>
+                       <ion-radio-group formControlName="{{q.question.id}}"  (ionChange)="changeLikert(q.question,$event)">
+                              <ion-grid *ngIf="mode=='ios'" class="ion-grid-ion-textarea">
+                                  <ion-row>
+                                      <ion-col>
+                                         Pas du tout
+                                      </ion-col>
+                                      <ion-col>
+                                          Un Peu
+                                      </ion-col>
+                                      <ion-col>
+                                          Moyennement
+                                      </ion-col>
+                                      <ion-col>
+                                          Vraiment
+                                      </ion-col>
+
+                                      <ion-col>
+                                          Extrêmement
+                                      </ion-col>
+                                  </ion-row>
+                                  <ion-row>
+                                      <ion-col>
+                                          <ion-radio value="Pas du tout" *ngIf="mode=='ios'" class="ios-ion-radio"></ion-radio>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-radio value="Un peu" *ngIf="mode=='ios'" class="ios-ion-radio"></ion-radio>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-radio value="Moyennement" *ngIf="mode=='ios'" class="ios-ion-radio"></ion-radio>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-radio value="Vraiment" *ngIf="mode=='ios'" class="ios-ion-radio"></ion-radio>
+                                      </ion-col>
+                                      <ion-col>
+                                          <ion-radio value="Extrêmement" *ngIf="mode=='ios'" class="ios-ion-radio"></ion-radio>
+                                      </ion-col>
+                                  </ion-row>
+                              </ion-grid>
+                           <ion-grid *ngIf="mode=='md'" >
+                               <ion-row>
+                                   <ion-col>
+                                       Pas du tout
+                                   </ion-col>
+                                   <ion-col>
+                                       Un Peu
+                                   </ion-col>
+                                   <ion-col>
+                                       Moyennement
+                                   </ion-col>
+                                   <ion-col>
+                                       Vraiment
+                                   </ion-col>
+
+                                   <ion-col>
+                                       Extrêmement
+                                   </ion-col>
+                               </ion-row>
+                               <ion-row>
+                                   <ion-col>
+                                       <ion-radio value="Pas du tout"  *ngIf="mode=='md'"></ion-radio>
+                                   </ion-col>
+                                   <ion-col>
+                                       <ion-radio value="Un peu"  *ngIf="mode=='md'"></ion-radio>
+                                   </ion-col>
+                                   <ion-col>
+                                       <ion-radio value="Moyennement"  *ngIf="mode=='md'"></ion-radio>
+                                   </ion-col>
+                                   <ion-col>
+                                       <ion-radio value="Vraiment"  *ngIf="mode=='md'"></ion-radio>
+                                   </ion-col>
+                                   <ion-col>
+                                       <ion-radio value="Extrêmement" *ngIf="mode=='md'"></ion-radio>
+                                   </ion-col>
+                               </ion-row>
+                           </ion-grid>
+                          </ion-radio-group >
+
+                      </div>
+
+              </ion-list>
+              <ion-list *ngIf="q.question.questType=='slider10'||q.question.questType=='slider10CS'||q.question.questType=='slider10CE'">
+                  <ion-label  *ngIf="q.question.questDesc!=='' && q.questionnaire.type!=='T11'" class="label"
+                             position="stacked" [color]="(questionnaireForm.controls[q.question.id].valid) ? 'dark':'danger'"
+                  > {{q.questOrdre}}.  {{q.question.questDesc}}</ion-label>
+                  <ion-label *ngIf="q.question.questDesc!=='' && q.questionnaire.type==='T11'" class="label"
+                             position="stacked" [color]="(questionnaireForm.controls[q.question.id].valid)? 'dark':'danger'"
+                  >{{q.questOrdre-2}}.  {{q.question.questDesc}}</ion-label>
+
+                 <!--(  questionnaireForm.controls[q.question.id].valid) &&-->
+                  <div class="margin">
+                      <div class="limit">
+                          <ion-label  position="stacked" class="left">
+                              Pas du tout
+                          </ion-label>
+                          <ion-label  position="stacked" class="right">
+                              Tout à fait
+                          </ion-label>
+                  </div>
+                      <div class="limitBordure">
+                              <mat-slider
+                                      class = "tp-margin"
+                                      [disable] = "disabled"
+                                      [invert] = "invert"
+                                      [thumbLabel] = "thumbLabel"
+                                      [vertical] = "vertical"
+                                      [max]="max"
+                                      [min]="min"
+                                      [formControlName]="q.question.id"
+                                      [step]="step"
+                                      (change)="changeSlider($event,q.question)"
+                                      (click)="changeSlider($event,q.question)"
+                                      (input)="changeSlider($event,q.question)">
+
+                              </mat-slider>
+                      </div>
+                  </div>
+
+
+
+                  <div>
+
+                      </div>
+              </ion-list>
+              <!-- Question fille text-->
+              <ion-list *ngIf="(q.question.questFilleDesc!=null)&&(q.question.questFilleType=='text')">
+                  <ion-label class="label ion-text-wrap"
+                             position="stacked" [color]="questionnaireForm.controls[q.question.id+'.1'].valid? 'dark':'danger'"
+                  >{{q.question.questFilleDesc}}</ion-label>
+
+                      <ion-textarea *ngIf="mode=='ios'" class="ion-grid-ion-textarea" placeholder="réponse" rows="6" cols="20" [formControlName]="q.question.id+'.1'"></ion-textarea>
+                  <ion-textarea *ngIf="mode=='md'" placeholder="réponse" rows="6" cols="20" [formControlName]="q.question.id+'.1'"></ion-textarea>
+
+              </ion-list>
+              <!-- Question fille radio-->
+              <ion-list *ngIf="(q.question.questFilleDesc!=null)&&(q.question.questFilleType=='radio')">
+                  <ion-label class="label ion-text-wrap" position="stacked"
+                             [color]="questionnaireForm.controls[q.question.id+'.1'].valid? 'dark':'danger'">{{q.question.questFilleDesc}}
+                  </ion-label>
+                  <ion-radio-group [formControlName]="q.question.id+'.1'">
+                      <ion-item *ngFor="let rf of q.question.questFilleModalite ">
+                          <ion-label class="smallLabel">{{rf.value}}</ion-label>
+                          <ion-radio value="{{rf.id}}" *ngIf="mode=='ios'" class="ios-ion-radio"></ion-radio>
+                          <ion-radio value="{{rf.id}}" *ngIf="mode=='md'"></ion-radio>
+                      </ion-item>
+                  </ion-radio-group>
+              </ion-list>
+              <!-- Question fille QCM-->
+              <ion-list *ngIf="(q.question.questFilleDesc!=null)&&(q.question.questFilleType=='QCM')">
+
+                  <ion-label class="label ion-text-wrap" position="stacked"
+                             [color]="questionnaireForm.controls[q.question.id+'.1'].valid? 'dark':'danger'">{{q.question.questFilleDesc}}
+                  </ion-label>
+                  <ion-item *ngFor="let rf  of q.question.questFilleModalite,let i =index ">
+                      <ion-label class="smallLabel ion-text-wrap">{{rf.value}}</ion-label>
+                      <div style="position: relative" >
+                          <ion-checkbox *ngIf="mode=='ios'" class="ios-ion-checkbox" [formControlName]="q.question.id+'.1.'+rf.id"   name="{{rf.value}}"  value="{{rf.value}}" checked="false" (ionChange)="checked($event,q.question.id+'.1',q.question.id+'.1.'+rf.id)" ></ion-checkbox>
+                          <ion-checkbox *ngIf="mode=='md'" [formControlName]="q.question.id+'.1.'+rf.id"   name="{{rf.value}}"  value="{{rf.value}}" checked="false" (ionChange)="checked($event,q.question.id+'.1',q.question.id+'.1.'+rf.id)" ></ion-checkbox>
+
+                      </div>
+                  </ion-item>
+
+              </ion-list>
+        </div>
+        <div>
+            <div class="left">
+                <ion-button color="secondary" routerLink="../details" size="small" type="button">
+              <span class="material-icons">
+                update_disabled
+                </span>
+                    Annuler
+                </ion-button>
+            </div>
+
+            <div class="right">
+                <ion-button color="primary" size="small" type="submit" >
+          <span class="material-icons">
+            save
+            </span>
+                    Valider
+                </ion-button>
+
+            </div>
+        </div>
+    </form>
+    <div *ngIf="taille==0" id="container">
+        <h1> pas de questionnaire en cours</h1>
+    </div>
+</ion-content>
+<ion-footer>
+    <div class="conclusion">
+        <h1> {{conclusion}}</h1>
+    </div>
+</ion-footer>

@@ -1,0 +1,1691 @@
+{
+  "resources": [
+    {
+      "id": 1,
+      "ResSession": "hiver 2021",
+      "ResDesc": "ressources1",
+      "ResUrl": "https://www.uqtr.ca/",
+      "ResType": {
+        "id": 1,
+        "cateDesc": "Artistes et écrivains",
+        "cateStatut": "1",
+        "cateAvatUrl": "accessibility_new"
+      },
+      "ResLieu": "1651 Rue du père marquette",
+      "ResDate": "2021-01-11T22:20:58.112Z",
+      "ResVille": "La Matapédia, Qc",
+      "ResCodeP": "GZ3 7N1",
+      "ResRegion": "BAS-ST-LAURENT",
+      "ResComment": "",
+      "ResLike": "",
+      "ResPicture": [
+        {
+          "id": 1,
+          "pictureDesc": "image_1",
+          "pictureDate": "2021-01-12T12:18:03.437Z",
+          "pictureUrl": "../../../../assets/images/resources/image1.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 2,
+          "pictureDesc": "image_2",
+          "pictureDate": "2021-01-12T17:17:26.171Z",
+          "pictureUrl": "../../../../assets/images/resources/image2.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 3,
+          "pictureDesc": "image_3",
+          "pictureDate": "2021-01-12T07:28:42.557Z",
+          "pictureUrl": "../../../../assets/images/resources/image3.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 4,
+          "pictureDesc": "image_4",
+          "pictureDate": "2021-01-12T06:06:20.764Z",
+          "pictureUrl": "../../../../assets/images/resources/image4.png",
+          "pictureStatus": 1
+        }
+      ],
+      "ResUpdateDate": "2021-01-12T04:47:35.091Z",
+      "ResStatus": 1
+    },
+    {
+      "id": 2,
+      "ResSession": "hiver 2021",
+      "ResDesc": "ressources2",
+      "ResUrl": "https://www.uqtr.ca/",
+      "ResType": {
+        "id": 2,
+        "cateDesc": "Contenus culturels numériques",
+        "cateStatut": "1",
+        "cateAvatUrl": "language"
+      },
+      "ResLieu": "1652 Rue du père marquette",
+      "ResDate": "2021-01-12T02:50:01.056Z",
+      "ResVille": "La Matapédia, Qc",
+      "ResCodeP": "GZ3 7N1",
+      "ResRegion": "BAS-ST-LAURENT",
+      "ResComment": "",
+      "ResLike": "",
+      "ResPicture": [
+        {
+          "id": 5,
+          "pictureDesc": "image_5",
+          "pictureDate": "2021-01-12T12:18:03.437Z",
+          "pictureUrl": "../../../../assets/images/resources/image5.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 6,
+          "pictureDesc": "image_6",
+          "pictureDate": "2021-01-12T17:17:26.171Z",
+          "pictureUrl": "../../../../assets/images/resources/image6.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 7,
+          "pictureDesc": "image_7",
+          "pictureDate": "2021-01-12T07:28:42.557Z",
+          "pictureUrl": "../../../../assets/images/resources/image7.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 8,
+          "pictureDesc": "image_8",
+          "pictureDate": "2021-01-12T06:06:20.764Z",
+          "pictureUrl": "../../../../assets/images/resources/image8.png",
+          "pictureStatus": 1
+        }
+      ],
+      "ResUpdateDate": "2021-01-12T18:28:12.479Z",
+      "ResStatus": 1
+    },
+    {
+      "id": 3,
+      "ResSession": "hiver 2021",
+      "ResDesc": "ressources3",
+      "ResUrl": "https://www.uqtr.ca/",
+      "ResType": {
+        "id": 3,
+        "cateDesc": "Autres ressources culturelles",
+        "cateStatut": "1",
+        "cateAvatUrl": "add_box"
+      },
+      "ResLieu": "1653 Rue du père marquette",
+      "ResDate": "2021-01-12T17:33:37.290Z",
+      "ResVille": "Trois Rivière, Qc",
+      "ResCodeP": "G8Z 4M3",
+      "ResRegion": "MAURICIE",
+      "ResComment": "",
+      "ResLike": "",
+      "ResPicture": [
+        {
+          "id": 5,
+          "pictureDesc": "image_5",
+          "pictureDate": "2021-01-12T12:18:03.437Z",
+          "pictureUrl": "../../../../assets/images/resources/image5.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 6,
+          "pictureDesc": "image_6",
+          "pictureDate": "2021-01-12T17:17:26.171Z",
+          "pictureUrl": "../../../../assets/images/resources/image6.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 7,
+          "pictureDesc": "image_7",
+          "pictureDate": "2021-01-12T07:28:42.557Z",
+          "pictureUrl": "../../../../assets/images/resources/image7.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 8,
+          "pictureDesc": "image_8",
+          "pictureDate": "2021-01-12T06:06:20.764Z",
+          "pictureUrl": "../../../../assets/images/resources/image8.png",
+          "pictureStatus": 1
+        }
+      ],
+      "ResUpdateDate": "2021-01-12T01:17:13.546Z",
+      "ResStatus": 1
+    },
+    {
+      "id": 4,
+      "ResSession": "hiver 2021",
+      "ResDesc": "ressources4ressources4ressources4ressources4ressources4ressources4ressources4",
+      "ResUrl": "https://www.uqtr.ca/",
+      "ResType": {
+        "id": 4,
+        "cateDesc": "Lieux",
+        "cateStatut": "1",
+        "cateAvatUrl": "place"
+      },
+      "ResLieu": "1654 Rue du père marquette",
+      "ResDate": "2021-01-11T22:33:40.879Z",
+      "ResVille": "Trois Rivière, Qc",
+      "ResCodeP": "G8Z 4M3",
+      "ResRegion": "MAURICIE",
+      "ResComment": "",
+      "ResLike": "",
+      "ResPicture": [
+        {
+          "id": 5,
+          "pictureDesc": "image_5",
+          "pictureDate": "2021-01-12T12:18:03.437Z",
+          "pictureUrl": "../../../../assets/images/resources/image5.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 6,
+          "pictureDesc": "image_6",
+          "pictureDate": "2021-01-12T17:17:26.171Z",
+          "pictureUrl": "../../../../assets/images/resources/image6.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 7,
+          "pictureDesc": "image_7",
+          "pictureDate": "2021-01-12T07:28:42.557Z",
+          "pictureUrl": "../../../../assets/images/resources/image7.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 8,
+          "pictureDesc": "image_8",
+          "pictureDate": "2021-01-12T06:06:20.764Z",
+          "pictureUrl": "../../../../assets/images/resources/image8.png",
+          "pictureStatus": 1
+        }
+      ],
+      "ResUpdateDate": "2021-01-12T17:31:01.630Z",
+      "ResStatus": 1
+    },
+    {
+      "id": 5,
+      "ResSession": "hiver 2021",
+      "ResDesc": "ressources 5",
+      "ResUrl": "https://www.uqtr.ca/",
+      "ResType": {
+        "id": 1,
+        "cateDesc": "Artistes et écrivains",
+        "cateStatut": "1",
+        "cateAvatUrl": "accessibility_new"
+      },
+      "ResLieu": "1654 Rue du père marquette",
+      "ResDate": "2021-01-11T22:33:40.879Z",
+      "ResVille": " LAVAL, Qc",
+      "ResCodeP": "J2C 0R5",
+      "ResRegion": " LAVAL",
+      "ResComment": "",
+      "ResLike": "",
+      "ResPicture": [
+        {
+          "id": 5,
+          "pictureDesc": "image_5",
+          "pictureDate": "2021-01-12T12:18:03.437Z",
+          "pictureUrl": "../../../../assets/images/resources/image5.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 6,
+          "pictureDesc": "image_6",
+          "pictureDate": "2021-01-12T17:17:26.171Z",
+          "pictureUrl": "../../../../assets/images/resources/image6.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 7,
+          "pictureDesc": "image_7",
+          "pictureDate": "2021-01-12T07:28:42.557Z",
+          "pictureUrl": "../../../../assets/images/resources/image7.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 8,
+          "pictureDesc": "image_8",
+          "pictureDate": "2021-01-12T06:06:20.764Z",
+          "pictureUrl": "../../../../assets/images/resources/image8.png",
+          "pictureStatus": 1
+        }
+      ],
+      "ResUpdateDate": "2021-01-12T17:31:01.630Z",
+      "ResStatus": 1
+    },
+    {
+      "id": 6,
+      "ResSession": "hiver 2021",
+      "ResDesc": "ressources 6",
+      "ResUrl": "https://www.uqtr.ca/",
+      "ResType": {
+        "id": 2,
+        "cateDesc": "Contenus culturels numériques",
+        "cateStatut": "1",
+        "cateAvatUrl": "language"
+      },
+      "ResLieu": "1654 Rue du père marquette",
+      "ResDate": "2021-01-11T22:33:40.879Z",
+      "ResVille": " LAVAL, Qc",
+      "ResCodeP": "J2C 0R5",
+      "ResRegion": "LAVAL",
+      "ResComment": "",
+      "ResLike": "",
+      "ResPicture": [
+        {
+          "id": 5,
+          "pictureDesc": "image_5",
+          "pictureDate": "2021-01-12T12:18:03.437Z",
+          "pictureUrl": "../../../../assets/images/resources/image5.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 6,
+          "pictureDesc": "image_6",
+          "pictureDate": "2021-01-12T17:17:26.171Z",
+          "pictureUrl": "../../../../assets/images/resources/image6.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 7,
+          "pictureDesc": "image_7",
+          "pictureDate": "2021-01-12T07:28:42.557Z",
+          "pictureUrl": "../../../../assets/images/resources/image7.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 8,
+          "pictureDesc": "image_8",
+          "pictureDate": "2021-01-12T06:06:20.764Z",
+          "pictureUrl": "../../../../assets/images/resources/image8.png",
+          "pictureStatus": 1
+        }
+      ],
+      "ResUpdateDate": "2021-01-12T17:31:01.630Z",
+      "ResStatus": 1
+    },
+    {
+      "id": 7,
+      "ResSession": "hiver 2021",
+      "ResDesc": "ressources 7",
+      "ResUrl": "https://www.uqtr.ca/",
+      "ResType": {
+        "id": 3,
+        "cateDesc": "Autres ressources culturelles",
+        "cateStatut": "1",
+        "cateAvatUrl": "add_box"
+      },
+      "ResLieu": "1654 Rue du père marquette",
+      "ResDate": "2021-01-11T22:33:40.879Z",
+      "ResVille": "Argenteuil, Qc",
+      "ResCodeP": "J2C 0R5",
+      "ResRegion": "LAURENTIDES",
+      "ResComment": "",
+      "ResLike": "",
+      "ResPicture": [
+        {
+          "id": 5,
+          "pictureDesc": "image_5",
+          "pictureDate": "2021-01-12T12:18:03.437Z",
+          "pictureUrl": "../../../../assets/images/resources/image5.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 6,
+          "pictureDesc": "image_6",
+          "pictureDate": "2021-01-12T17:17:26.171Z",
+          "pictureUrl": "../../../../assets/images/resources/image6.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 7,
+          "pictureDesc": "image_7",
+          "pictureDate": "2021-01-12T07:28:42.557Z",
+          "pictureUrl": "../../../../assets/images/resources/image7.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 8,
+          "pictureDesc": "image_8",
+          "pictureDate": "2021-01-12T06:06:20.764Z",
+          "pictureUrl": "../../../../assets/images/resources/image8.png",
+          "pictureStatus": 1
+        }
+      ],
+      "ResUpdateDate": "2021-01-12T17:31:01.630Z",
+      "ResStatus": 1
+    },
+    {
+      "id": 8,
+      "ResSession": "hiver 2021",
+      "ResDesc": "ressources 8",
+      "ResUrl": "https://www.uqtr.ca/",
+      "ResType": {
+        "id": 3,
+        "cateDesc": "Autres ressources culturelles",
+        "cateStatut": "1",
+        "cateAvatUrl": "add_box"
+      },
+      "ResLieu": "1654 Rue du père marquette",
+      "ResDate": "2021-01-11T22:33:40.879Z",
+      "ResVille": " Argenteuil, Qc",
+      "ResCodeP": "J2C 0R5",
+      "ResRegion": "LAURENTIDES",
+      "ResComment": "",
+      "ResLike": "",
+      "ResPicture": [
+        {
+          "id": 5,
+          "pictureDesc": "image_5",
+          "pictureDate": "2021-01-12T12:18:03.437Z",
+          "pictureUrl": "../../../../assets/images/resources/image5.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 6,
+          "pictureDesc": "image_6",
+          "pictureDate": "2021-01-12T17:17:26.171Z",
+          "pictureUrl": "../../../../assets/images/resources/image6.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 7,
+          "pictureDesc": "image_7",
+          "pictureDate": "2021-01-12T07:28:42.557Z",
+          "pictureUrl": "../../../../assets/images/resources/image7.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 8,
+          "pictureDesc": "image_8",
+          "pictureDate": "2021-01-12T06:06:20.764Z",
+          "pictureUrl": "../../../../assets/images/resources/image8.png",
+          "pictureStatus": 1
+        }
+      ],
+      "ResUpdateDate": "2021-01-12T17:31:01.630Z",
+      "ResStatus": 1
+    },
+    {
+      "id": 9,
+      "ResSession": "hiver 2021",
+      "ResDesc": "ressources9",
+      "ResUrl": "https://www.uqtr.ca/",
+      "ResType": {
+        "id": 4,
+        "cateDesc": "Lieux",
+        "cateStatut": "1",
+        "cateAvatUrl": "place"
+      },
+      "ResLieu": "1654 Rue du père marquette",
+      "ResDate": "2021-01-11T22:33:40.879Z",
+      "ResVille": " Argenteuil, Qc",
+      "ResCodeP": "J2C 0R5",
+      "ResRegion": "LAURENTIDES",
+      "ResComment": "",
+      "ResLike": "",
+      "ResPicture": [
+        {
+          "id": 5,
+          "pictureDesc": "image_5",
+          "pictureDate": "2021-01-12T12:18:03.437Z",
+          "pictureUrl": "../../../../assets/images/resources/image5.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 6,
+          "pictureDesc": "image_6",
+          "pictureDate": "2021-01-12T17:17:26.171Z",
+          "pictureUrl": "../../../../assets/images/resources/image6.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 7,
+          "pictureDesc": "image_7",
+          "pictureDate": "2021-01-12T07:28:42.557Z",
+          "pictureUrl": "../../../../assets/images/resources/image7.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 8,
+          "pictureDesc": "image_8",
+          "pictureDate": "2021-01-12T06:06:20.764Z",
+          "pictureUrl": "../../../../assets/images/resources/image8.png",
+          "pictureStatus": 1
+        }
+      ],
+      "ResUpdateDate": "2021-01-12T17:31:01.630Z",
+      "ResStatus": 1
+    },
+    {
+      "id": 10,
+      "ResSession": "hiver 2021",
+      "ResDesc": "ressources10",
+      "ResUrl": "https://www.uqtr.ca/",
+      "ResType": {
+        "id": 4,
+        "cateDesc": "Lieux",
+        "cateStatut": "1",
+        "cateAvatUrl": "place"
+      },
+      "ResLieu": "1654 Rue du père marquette",
+      "ResDate": "2021-01-11T22:33:40.879Z",
+      "ResVille": " Argenteuil, Qc",
+      "ResCodeP": "J2C 0R5",
+      "ResRegion": "LAURENTIDES",
+      "ResComment": "",
+      "ResLike": "",
+      "ResPicture": [
+        {
+          "id": 5,
+          "pictureDesc": "image_5",
+          "pictureDate": "2021-01-12T12:18:03.437Z",
+          "pictureUrl": "../../../../assets/images/resources/image5.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 6,
+          "pictureDesc": "image_6",
+          "pictureDate": "2021-01-12T17:17:26.171Z",
+          "pictureUrl": "../../../../assets/images/resources/image6.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 7,
+          "pictureDesc": "image_7",
+          "pictureDate": "2021-01-12T07:28:42.557Z",
+          "pictureUrl": "../../../../assets/images/resources/image7.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 8,
+          "pictureDesc": "image_8",
+          "pictureDate": "2021-01-12T06:06:20.764Z",
+          "pictureUrl": "../../../../assets/images/resources/image8.png",
+          "pictureStatus": 1
+        }
+      ],
+      "ResUpdateDate": "2021-01-12T17:31:01.630Z",
+      "ResStatus": 1
+    },
+    {
+      "id": 11,
+      "ResSession": "hiver 2021",
+      "ResDesc": "ressources11",
+      "ResUrl": "https://www.uqtr.ca/",
+      "ResType": {
+        "id": 4,
+        "cateDesc": "Lieux",
+        "cateStatut": "1",
+        "cateAvatUrl": "place"
+      },
+      "ResLieu": "1654 Rue du père marquette",
+      "ResDate": "2021-01-11T22:33:40.879Z",
+      "ResVille": " Gaspésie, Qc",
+      "ResCodeP": "J2C 0R5",
+      "ResRegion": "GASPÉSIE–ÎLES-DE-LA-MADELEINE",
+      "ResComment": "",
+      "ResLike": "",
+      "ResPicture": [
+        {
+          "id": 5,
+          "pictureDesc": "image_5",
+          "pictureDate": "2021-01-12T12:18:03.437Z",
+          "pictureUrl": "../../../../assets/images/resources/image5.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 6,
+          "pictureDesc": "image_6",
+          "pictureDate": "2021-01-12T17:17:26.171Z",
+          "pictureUrl": "../../../../assets/images/resources/image6.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 7,
+          "pictureDesc": "image_7",
+          "pictureDate": "2021-01-12T07:28:42.557Z",
+          "pictureUrl": "../../../../assets/images/resources/image7.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 8,
+          "pictureDesc": "image_8",
+          "pictureDate": "2021-01-12T06:06:20.764Z",
+          "pictureUrl": "../../../../assets/images/resources/image8.png",
+          "pictureStatus": 1
+        }
+      ],
+      "ResUpdateDate": "2021-01-12T17:31:01.630Z",
+      "ResStatus": 1
+    },
+    {
+      "id": 12,
+      "ResSession": "hiver 2021",
+      "ResDesc": "ressources 12",
+      "ResUrl": "https://www.uqtr.ca/",
+      "ResType": {
+        "id": 3,
+        "cateDesc": "Autres ressources culturelles",
+        "cateStatut": "1",
+        "cateAvatUrl": "add_box"
+      },
+      "ResLieu": "1654 Rue du père marquette",
+      "ResDate": "2021-01-11T22:33:40.879Z",
+      "ResVille": " Argenteuil, Qc",
+      "ResCodeP": "J2C 0R5",
+      "ResRegion": "LAURENTIDES",
+      "ResComment": "",
+      "ResLike": "",
+      "ResPicture": [
+        {
+          "id": 5,
+          "pictureDesc": "image_5",
+          "pictureDate": "2021-01-12T12:18:03.437Z",
+          "pictureUrl": "../../../../assets/images/resources/image5.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 6,
+          "pictureDesc": "image_6",
+          "pictureDate": "2021-01-12T17:17:26.171Z",
+          "pictureUrl": "../../../../assets/images/resources/image6.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 7,
+          "pictureDesc": "image_7",
+          "pictureDate": "2021-01-12T07:28:42.557Z",
+          "pictureUrl": "../../../../assets/images/resources/image7.png",
+          "pictureStatus": 1
+        },
+        {
+          "id": 8,
+          "pictureDesc": "image_8",
+          "pictureDate": "2021-01-12T06:06:20.764Z",
+          "pictureUrl": "../../../../assets/images/resources/image8.png",
+          "pictureStatus": 1
+        }
+      ],
+      "ResUpdateDate": "2021-01-12T17:31:01.630Z",
+      "ResStatus": 1
+    }
+  ],
+  "accounts": [
+    {
+      "id": 1,
+      "users": 1,
+      "profile": 1,
+      "creationDateAccount": "2020-12-14T21:15:35.763Z",
+      "updateDateAccount": "2020-12-14T02:29:02.110Z",
+      "statusAccount": 1
+    },
+    {
+      "id": 2,
+      "users": 1,
+      "profile": 2,
+      "creationDateAccount": "2020-12-14T03:31:41.360Z",
+      "updateDateAccount": "2020-12-14T23:09:24.629Z",
+      "statusAccount": 1
+    },
+    {
+      "id": 3,
+      "users": 2,
+      "profile": 1,
+      "creationDateAccount": "2020-12-13T23:49:07.394Z",
+      "updateDateAccount": "2020-12-14T03:03:09.090Z",
+      "statusAccount": 1
+    },
+    {
+      "id": 4,
+      "users": 2,
+      "profile": 2,
+      "creationDateAccount": "2020-12-14T10:55:57.308Z",
+      "updateDateAccount": "2020-12-14T06:47:56.468Z",
+      "statusAccount": 1
+    }
+  ],
+  "course_resource": [
+    {
+      "id": 1,
+      "coursResIntention": "Intention cours-ressource1",
+      "coursResResource": {
+        "id": 1,
+        "ResSession": "hiver 2021",
+        "ResDesc": "ressources1",
+        "ResUrl": "https://www.uqtr.ca/",
+        "ResType": {
+          "id": 1,
+          "cateDesc": "Artistes et écrivains",
+          "cateStatut": "1",
+          "cateAvatUrl": "accessibility_new"
+        },
+        "ResLieu": "1651 Rue du père marquette",
+        "ResDate": "2021-01-26T11:28:59.477Z",
+        "ResVille": "La Matapédia, Qc",
+        "ResCodeP": "GZ3 7N1",
+        "ResRegion": "BAS-ST-LAURENT",
+        "ResComment": "",
+        "ResLike": "",
+        "ResPicture": [
+          {
+            "id": 1,
+            "pictureDesc": "image_1",
+            "pictureDate": "2021-01-25T14:42:08.174Z",
+            "pictureUrl": "../../../../assets/images/resources/image1.png",
+            "pictureStatus": 1
+          },
+          {
+            "id": 2,
+            "pictureDesc": "image_11",
+            "pictureDate": "2021-01-25T23:26:22.303Z",
+            "pictureUrl": "../../../../assets/images/resources/image2.png",
+            "pictureStatus": 1
+          }
+        ],
+        "ResUpdateDate": "2021-01-26T13:41:40.487Z",
+        "ResStatus": 1
+      },
+      "coursResCourse": {
+        "id": 1,
+        "courSession": "hiver 2021",
+        "courDesc": "ALG1001",
+        "courType": "éducatif",
+        "courDateStart": "2021-01-25T23:07:02.453Z",
+        "courProf": "Prof ALG1001",
+        "courDateEnd": "2021-01-25T21:56:53.102Z",
+        "courStudGroup": {
+          "id": 1,
+          "groupNom": "groupe1",
+          "groupDateCreat": "2021-02-05T12:10:25.458Z",
+          "groupSession": "hiver 2021",
+          "groupEtudiant": {
+            "id": 1,
+            "etudNom": "Etudiant1",
+            "etudPrenom": "Etudant Prenom1",
+            "etudCP": "TETA07620201"
+          }
+        },
+        "courUpdateDate": "2021-01-26T03:53:47.273Z",
+        "courStatus": 1
+      }
+    },
+    {
+      "id": 2,
+      "coursResIntention": "Intention cours-ressource2",
+      "coursResResource": {
+        "id": 2,
+        "ResSession": "hiver 2021",
+        "ResDesc": "ressources2",
+        "ResUrl": "https://www.uqtr.ca/",
+        "ResType": {
+          "id": 2,
+          "cateDesc": "Contenus culturels numériques",
+          "cateStatut": "1",
+          "cateAvatUrl": "language"
+        },
+        "ResLieu": "1652 Rue du père marquette",
+        "ResDate": "2021-01-26T11:34:01.046Z",
+        "ResVille": "La Matapédia, Qc",
+        "ResCodeP": "GZ3 7N1",
+        "ResRegion": "BAS-ST-LAURENT",
+        "ResComment": "",
+        "ResLike": "",
+        "ResPicture": [
+          {
+            "id": 2,
+            "pictureDesc": "image_2",
+            "pictureDate": "2021-01-25T15:05:48.454Z",
+            "pictureUrl": "../../../../assets/images/resources/image2.png",
+            "pictureStatus": 1
+          },
+          {
+            "id": 3,
+            "pictureDesc": "image_21",
+            "pictureDate": "2021-01-26T00:52:06.166Z",
+            "pictureUrl": "../../../../assets/images/resources/image3.png",
+            "pictureStatus": 1
+          }
+        ],
+        "ResUpdateDate": "2021-01-25T18:29:07.025Z",
+        "ResStatus": 1
+      },
+      "coursResCourse": {
+        "id": 2,
+        "courSession": "hiver 2021",
+        "courDesc": "INF1001",
+        "courType": "éducatif",
+        "courDateStart": "2021-01-26T01:19:44.810Z",
+        "courProf": "Prof INF1001",
+        "courDateEnd": "2021-01-26T09:15:13.863Z",
+        "courStudGroup": {
+          "id": 2,
+          "groupNom": "groupe2",
+          "groupDateCreat": "2021-02-04T23:27:29.164Z",
+          "groupSession": "hiver 2021",
+          "groupEtudiant": {
+            "id": 2,
+            "etudNom": "Etudiant2",
+            "etudPrenom": "Etudant Prenom2",
+            "etudCP": "TETA07620201"
+          }
+        },
+        "courUpdateDate": "2021-01-26T13:55:09.960Z",
+        "courStatus": 1
+      }
+    },
+    {
+      "id": 3,
+      "coursResIntention": "Intention cours-ressource3",
+      "coursResResource": {
+        "id": 3,
+        "ResSession": "hiver 2021",
+        "ResDesc": "ressources3",
+        "ResUrl": "https://www.uqtr.ca/",
+        "ResType": {
+          "id": 3,
+          "cateDesc": "Autres ressources culturelles",
+          "cateStatut": "1",
+          "cateAvatUrl": "add_box"
+        },
+        "ResLieu": "1653 Rue du père marquette",
+        "ResDate": "2021-01-25T19:59:31.569Z",
+        "ResVille": "Trois Rivière, Qc",
+        "ResCodeP": "G8Z 4M3",
+        "ResRegion": "MAURICIE",
+        "ResComment": "",
+        "ResLike": "",
+        "ResPicture": [
+          {
+            "id": 3,
+            "pictureDesc": "image_3",
+            "pictureDate": "2021-01-26T08:55:35.730Z",
+            "pictureUrl": "../../../../assets/images/resources/image3.png",
+            "pictureStatus": 1
+          },
+          {
+            "id": 4,
+            "pictureDesc": "image_31",
+            "pictureDate": "2021-01-25T15:51:28.450Z",
+            "pictureUrl": "../../../../assets/images/resources/image4.png",
+            "pictureStatus": 1
+          }
+        ],
+        "ResUpdateDate": "2021-01-25T20:58:17.738Z",
+        "ResStatus": 1
+      },
+      "coursResCourse": {
+        "id": 1,
+        "courSession": "hiver 2021",
+        "courDesc": "ALG1001",
+        "courType": "éducatif",
+        "courDateStart": "2021-01-25T22:47:02.053Z",
+        "courProf": "Prof INF1002",
+        "courDateEnd": "2021-01-25T22:41:12.140Z",
+        "courStudGroup": {
+          "id": 3,
+          "groupNom": "groupe3",
+          "groupDateCreat": "2021-02-04T20:35:48.858Z",
+          "groupSession": "hiver 2021",
+          "groupEtudiant": {
+            "id": 3,
+            "etudNom": "Etudiant3",
+            "etudPrenom": "Etudant Prenom3",
+            "etudCP": "TETA07620201"
+          }
+        },
+        "courUpdateDate": "2021-01-26T03:31:49.090Z",
+        "courStatus": 1
+      }
+    },
+    {
+      "id": 4,
+      "coursResIntention": "Intention cours-ressource4",
+      "coursResResource": {
+        "id": 4,
+        "ResSession": "hiver 2021",
+        "ResDesc": "ressources4",
+        "ResUrl": "https://www.uqtr.ca/",
+        "ResType": {
+          "id": 4,
+          "cateDesc": "Lieux",
+          "cateStatut": "1",
+          "cateAvatUrl": "place"
+        },
+        "ResLieu": "1654 Rue du père marquette",
+        "ResDate": "2021-01-25T19:11:38.234Z",
+        "ResVille": "Trois Rivière, Qc",
+        "ResCodeP": "G8Z 4M3",
+        "ResRegion": "MAURICIE",
+        "ResComment": "",
+        "ResLike": "",
+        "ResPicture": [
+          {
+            "id": 4,
+            "pictureDesc": "image_4",
+            "pictureDate": "2021-01-25T19:29:09.803Z",
+            "pictureUrl": "../../../../assets/images/resources/image4.png",
+            "pictureStatus": 1
+          },
+          {
+            "id": 5,
+            "pictureDesc": "image_41",
+            "pictureDate": "2021-01-25T18:20:45.391Z",
+            "pictureUrl": "../../../../assets/images/resources/image5.png",
+            "pictureStatus": 1
+          }
+        ],
+        "ResUpdateDate": "2021-01-26T10:50:59.038Z",
+        "ResStatus": 1
+      },
+      "coursResCourse": {
+        "id": 2,
+        "courSession": "hiver 2021",
+        "courDesc": "INF1001",
+        "courType": "éducatif",
+        "courDateStart": "2021-01-26T02:10:44.616Z",
+        "courProf": "Prof INF1004",
+        "courDateEnd": "2021-01-25T22:03:30.175Z",
+        "courStudGroup": {
+          "id": 4,
+          "groupNom": "groupe4",
+          "groupDateCreat": "2021-02-04T22:11:04.895Z",
+          "groupSession": "hiver 2021",
+          "groupEtudiant": {
+            "id": 4,
+            "etudNom": "Etudiant4",
+            "etudPrenom": "Etudant Prenom4",
+            "etudCP": "TETA07620201"
+          }
+        },
+        "courUpdateDate": "2021-01-26T05:58:20.812Z",
+        "courStatus": 1
+      }
+    },
+    {
+      "id": 5,
+      "coursResIntention": "Intention cours-ressource5",
+      "coursResResource": {
+        "id": 4,
+        "ResSession": "hiver 2021",
+        "ResDesc": "ressources4",
+        "ResUrl": "https://www.uqtr.ca/",
+        "ResType": {
+          "id": 4,
+          "cateDesc": "Lieux",
+          "cateStatut": "1",
+          "cateAvatUrl": "place"
+        },
+        "ResLieu": "1654 Rue du père marquette",
+        "ResDate": "2021-01-25T19:11:38.234Z",
+        "ResVille": "Trois Rivière, Qc",
+        "ResCodeP": "G8Z 4M3",
+        "ResRegion": "MAURICIE",
+        "ResComment": "",
+        "ResLike": "",
+        "ResPicture": [
+          {
+            "id": 4,
+            "pictureDesc": "image_4",
+            "pictureDate": "2021-01-25T19:29:09.803Z",
+            "pictureUrl": "../../../../assets/images/resources/image4.png",
+            "pictureStatus": 1
+          },
+          {
+            "id": 5,
+            "pictureDesc": "image_41",
+            "pictureDate": "2021-01-25T18:20:45.391Z",
+            "pictureUrl": "../../../../assets/images/resources/image5.png",
+            "pictureStatus": 1
+          }
+        ],
+        "ResUpdateDate": "2021-01-26T10:50:59.038Z",
+        "ResStatus": 1
+      },
+      "coursResCourse": {
+        "id": 2,
+        "courSession": "hiver 2021",
+        "courDesc": "INF1001",
+        "courType": "éducatif",
+        "courDateStart": "2021-01-25T22:47:02.053Z",
+        "courProf": "Prof INF1002",
+        "courDateEnd": "2021-01-25T22:41:12.140Z",
+        "courStudGroup": "Student groupe3",
+        "courUpdateDate": "2021-01-26T03:31:49.090Z",
+        "courStatus": 1
+      }
+    },
+    {
+      "id": 6,
+      "coursResIntention": "Intention cours-ressource6",
+      "coursResResource": {
+        "id": 2,
+        "ResSession": "hiver 2021",
+        "ResDesc": "ressources2",
+        "ResUrl": "https://www.uqtr.ca/",
+        "ResType": {
+          "id": 2,
+          "cateDesc": "Contenus culturels numériques",
+          "cateStatut": "1",
+          "cateAvatUrl": "language"
+        },
+        "ResLieu": "1652 Rue du père marquette",
+        "ResDate": "2021-01-26T11:34:01.046Z",
+        "ResVille": "La Matapédia, Qc",
+        "ResCodeP": "GZ3 7N1",
+        "ResRegion": "BAS-ST-LAURENT",
+        "ResComment": "",
+        "ResLike": "",
+        "ResPicture": [
+          {
+            "id": 2,
+            "pictureDesc": "image_2",
+            "pictureDate": "2021-01-25T15:05:48.454Z",
+            "pictureUrl": "../../../../assets/images/resources/image2.png",
+            "pictureStatus": 1
+          },
+          {
+            "id": 3,
+            "pictureDesc": "image_21",
+            "pictureDate": "2021-01-26T00:52:06.166Z",
+            "pictureUrl": "../../../../assets/images/resources/image3.png",
+            "pictureStatus": 1
+          }
+        ],
+        "ResUpdateDate": "2021-01-25T18:29:07.025Z",
+        "ResStatus": 1
+      },
+      "coursResCourse": {
+        "id": 1,
+        "courSession": "hiver 2021",
+        "courDesc": "ALG1001",
+        "courType": "éducatif",
+        "courDateStart": "2021-01-25T23:07:02.453Z",
+        "courProf": "Prof ALG1001",
+        "courDateEnd": "2021-01-25T21:56:53.102Z",
+        "courStudGroup": {
+          "id": 3,
+          "groupNom": "groupe3",
+          "groupDateCreat": "2021-02-04T20:35:48.858Z",
+          "groupSession": "hiver 2021",
+          "groupEtudiant": {
+            "id": 3,
+            "etudNom": "Etudiant3",
+            "etudPrenom": "Etudant Prenom3",
+            "etudCP": "TETA07620204"
+          }
+        },
+        "courUpdateDate": "2021-01-26T03:53:47.273Z",
+        "courStatus": 1
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "cateDesc": "Artistes et écrivains",
+      "cateStatut": "1",
+      "cateAvatUrl": "create"
+    },
+    {
+      "id": 2,
+      "cateDesc": "Contenus culturels numériques",
+      "cateStatut": "1",
+      "cateAvatUrl": "laptop_mac"
+    },
+    {
+      "id": 3,
+      "cateDesc": "Autres ressources culturelles",
+      "cateStatut": "1",
+      "cateAvatUrl": "auto_awesome_motion"
+    },
+    {
+      "id": 4,
+      "cateDesc": "Lieux",
+      "cateStatut": "1",
+      "cateAvatUrl": "place"
+    }
+  ],
+  "cours": [
+    {
+      "id": 1,
+      "courSession": "hiver 2021",
+      "courDesc": "Gestion de classe, difficultés comportementales et pédagogies institutionnelles",
+      "courType": "éducatif",
+      "courDateStart": "2021-01-26T01:19:44.810Z",
+      "courProf": "Prof ALG1001",
+      "courDateEnd": "2021-01-26T09:15:13.863Z",
+      "courStudGroup": {
+        "id": 1,
+        "groupNom": "groupe1",
+        "groupDateCreat": "2021-02-05T12:10:25.458Z",
+        "groupSession": "hiver 2021",
+        "groupEtudiant": {
+          "id": 1,
+          "etudNom": "Etudiant1",
+          "etudPrenom": "Etudant Prenom1",
+          "etudCP": "TETA07620204"
+        }
+      },
+      "courUpdateDate": "2021-01-26T13:55:09.960Z",
+      "courStatus": 1
+    },
+    {
+      "id": 2,
+      "courSession": "hiver 2021",
+      "courDesc": "Stratégies péd., intercult. et collab. entre l'école, les familles et les communautés",
+      "courType": "éducatif",
+      "courDateStart": "2021-01-26T01:19:44.810Z",
+      "courProf": "Prof INF1001",
+      "courDateEnd": "2021-01-26T09:15:13.863Z",
+      "courStudGroup": {
+        "id": 2,
+        "groupNom": "groupe2",
+        "groupDateCreat": "2021-02-04T23:27:29.164Z",
+        "groupSession": "hiver 2021",
+        "groupEtudiant": {
+          "id": 2,
+          "etudNom": "Etudiant2",
+          "etudPrenom": "Etudant Prenom2",
+          "etudCP": "TETA07620201"
+        }
+      },
+      "courUpdateDate": "2021-01-26T13:55:09.960Z",
+      "courStatus": 1
+    },
+    {
+      "id": 3,
+      "courSession": "hiver 2021",
+      "courDesc": "Identité professionnelle III : synthèse de la formation et insertion professionnelle",
+      "courType": "éducatif",
+      "courDateStart": "2021-01-26T01:19:44.810Z",
+      "courProf": "Prof INF1002",
+      "courDateEnd": "2021-01-26T09:15:13.863Z",
+      "courStudGroup": "Student groupe3",
+      "courUpdateDate": "2021-01-26T13:55:09.960Z",
+      "courStatus": 1
+    },
+    {
+      "id": 4,
+      "courSession": "hiver 2021",
+      "courDesc": "INF1004",
+      "courType": "éducatif",
+      "courDateStart": "2021-01-26T01:19:44.810Z",
+      "courProf": "Prof INF1004",
+      "courDateEnd": "2021-01-26T09:15:13.863Z",
+      "courStudGroup": "Student groupe4",
+      "courUpdateDate": "2021-01-26T13:55:09.960Z",
+      "courStatus": 1
+    }
+  ],
+  "favoris": [
+    {
+      "FavUser": 3,
+      "FavResource": 4,
+      "FavDateModif": "2021-05-04T15:27:54-04:00",
+      "FavStatut": 1,
+      "FavSession": "hiver 2021",
+      "id": 1
+    },
+    {
+      "FavUser": 2,
+      "FavResource": 4,
+      "FavDateModif": "2021-05-06T09:28:03-04:00",
+      "FavStatut": 1,
+      "FavSession": "hiver 2021",
+      "id": 2
+    },
+    {
+      "FavUser": 2,
+      "FavResource": 1,
+      "FavDateModif": "2021-05-11T13:30:57-04:00",
+      "FavStatut": 1,
+      "FavSession": "hiver 2021",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "idUsers": 2,
+      "nameUsers": "elcarinas",
+      "mailUsers": "elcarinacours@uqtr.ca",
+      "CPUsers": "TETA07618800",
+      "passwordAUsers": "e10adc3949ba59abbe56e057f20f883e",
+      "dateModifUsers": "2021-05-11T09:47:19-04:00",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "idUsers": 3,
+      "nameUsers": "momon",
+      "mailUsers": "mam@uqtr.ca",
+      "CPUsers": "mamanmaman22",
+      "passwordAUsers": "0c96d00ebdf00445314bfae702f9d9c9",
+      "statusUsers": 1
+    },
+    {
+      "id": 4,
+      "idUsers": 4,
+      "nameUsers": "yahia",
+      "mailUsers": "pahia@uqtr.ca",
+      "CPUsers": "CPNONUSERETU",
+      "passwordAUsers": "a1d123a63936abbee87823e2f1affa9b",
+      "dateModifUsers": "2021-04-30T12:04:52-04:00",
+      "statusUsers": 1
+    },
+    {
+      "idUsers": "",
+      "nameUsers": "pierrette",
+      "mailUsers": "pierrette@uqtr.ca",
+      "CPUsers": "123456789101",
+      "passwordAUsers": "e10adc3949ba59abbe56e057f20f883e",
+      "dateCreateUsers": "2021-05-07T09:59:14-04:00",
+      "dateModifUsers": "2021-05-07T09:59:14-04:00",
+      "statusUsers": 0,
+      "id": 5
+    }
+  ],
+  "profiles": [
+    {
+      "idProfiles": 1,
+      "nameProfiles": "Etudiant",
+      "statusProfiles": 1
+    },
+    {
+      "idProfiles": 2,
+      "nameProfiles": "Etudiant",
+      "statusProfiles": 1
+    },
+    {
+      "idProfiles": 3,
+      "nameProfiles": "Administrateur",
+      "statusProfiles": 1
+    }
+  ],
+  "connected": [
+    {
+      "idUsers": 1,
+      "nameUsers": "yahia",
+      "passwordAUsers": "a1d123a63936abbee87823e2f1affa9b",
+      "mailUsers": "yahia@uqtr.ca",
+      "CPUsers": "CPNONUSERETU",
+      "statusUsers": 1,
+      "id": 1
+    },
+    {
+      "idUsers": 1,
+      "nameUsers": "yahia",
+      "passwordAUsers": "a1d123a63936abbee87823e2f1affa9b",
+      "mailUsers": "yahia@uqtr.ca",
+      "CPUsers": "CPNONUSERETU",
+      "statusUsers": 1,
+      "id": 2
+    },
+    {
+      "idUsers": 1,
+      "nameUsers": "yahia",
+      "passwordAUsers": "a1d123a63936abbee87823e2f1affa9b",
+      "mailUsers": "pahia@uqtr.ca",
+      "CPUsers": "CPNONUSERETU",
+      "statusUsers": 1,
+      "id": 3
+    },
+    {
+      "idUsers": 2,
+      "nameUsers": "elcarina",
+      "passwordAUsers": "ced68bbaf266115c181c0186fb1f6809",
+      "mailUsers": "elcarinacours@uqtr.ca",
+      "CPUsers": "TETA07618800",
+      "statusUsers": 1,
+      "id": 4
+    },
+    {
+      "idUsers": 2,
+      "nameUsers": "elcarina",
+      "passwordAUsers": "ced68bbaf266115c181c0186fb1f6809",
+      "mailUsers": "elcarinacours@uqtr.ca",
+      "CPUsers": "TETA07618800",
+      "statusUsers": 1,
+      "id": 5
+    },
+    {
+      "idUsers": 2,
+      "nameUsers": "elcarinos",
+      "passwordAUsers": "ced68bbaf266115c181c0186fb1f6809",
+      "mailUsers": "elcarinacours@uqtr.ca",
+      "CPUsers": "TETA07618800",
+      "statusUsers": 1,
+      "id": 6
+    },
+    {
+      "idUsers": 3,
+      "nameUsers": "maman",
+      "passwordAUsers": "0c96d00ebdf00445314bfae702f9d9c9",
+      "mailUsers": "mam@uqtr.ca",
+      "CPUsers": "mamanmaman22",
+      "statusUsers": 1,
+      "id": 7
+    },
+    {
+      "idUsers": 3,
+      "nameUsers": "maman",
+      "passwordAUsers": "0c96d00ebdf00445314bfae702f9d9c9",
+      "mailUsers": "mam@uqtr.ca",
+      "CPUsers": "mamanmaman22",
+      "statusUsers": 1,
+      "id": 8
+    },
+    {
+      "idUsers": 3,
+      "nameUsers": "maman",
+      "passwordAUsers": "0c96d00ebdf00445314bfae702f9d9c9",
+      "mailUsers": "mam@uqtr.ca",
+      "CPUsers": "mamanmaman22",
+      "statusUsers": 1,
+      "id": 9
+    },
+    {
+      "idUsers": 2,
+      "nameUsers": "elcarinos",
+      "passwordAUsers": "ced68bbaf266115c181c0186fb1f6809",
+      "mailUsers": "elcarinacours@uqtr.ca",
+      "CPUsers": "TETA07618800",
+      "statusUsers": 1,
+      "id": 10
+    },
+    {
+      "idUsers": 1,
+      "nameUsers": "yahia",
+      "passwordAUsers": "a1d123a63936abbee87823e2f1affa9b",
+      "mailUsers": "pahia@uqtr.ca",
+      "CPUsers": "CPNONUSERETU",
+      "statusUsers": 1,
+      "id": 11
+    },
+    {
+      "idUsers": 1,
+      "nameUsers": "yahia",
+      "passwordAUsers": "a1d123a63936abbee87823e2f1affa9b",
+      "mailUsers": "pahia@uqtr.ca",
+      "CPUsers": "CPNONUSERETU",
+      "statusUsers": 1,
+      "id": 12
+    },
+    {
+      "idUsers": 4,
+      "nameUsers": "yahia",
+      "passwordAUsers": "a1d123a63936abbee87823e2f1affa9b",
+      "mailUsers": "yahia@uqtr.ca",
+      "CPUsers": "CPNONUSERETU",
+      "statusUsers": 1,
+      "id": 13
+    },
+    {
+      "idUsers": 4,
+      "nameUsers": "yahia",
+      "passwordAUsers": "a1d123a63936abbee87823e2f1affa9b",
+      "mailUsers": "yahia@uqtr.ca",
+      "CPUsers": "CPNONUSERETU",
+      "statusUsers": 1,
+      "id": 14
+    },
+    {
+      "idUsers": 4,
+      "nameUsers": "yahia",
+      "passwordAUsers": "a1d123a63936abbee87823e2f1affa9b",
+      "mailUsers": "yahia@uqtr.ca",
+      "CPUsers": "CPNONUSERETU",
+      "statusUsers": 1,
+      "id": 15
+    },
+    {
+      "idUsers": 4,
+      "nameUsers": "yahia",
+      "passwordAUsers": "a1d123a63936abbee87823e2f1affa9b",
+      "mailUsers": "yahia@uqtr.ca",
+      "CPUsers": "CPNONUSERETU",
+      "statusUsers": 1,
+      "id": 16
+    },
+    {
+      "idUsers": 4,
+      "nameUsers": "yahia",
+      "passwordAUsers": "a1d123a63936abbee87823e2f1affa9b",
+      "mailUsers": "yahia@uqtr.ca",
+      "CPUsers": "CPNONUSERETU",
+      "statusUsers": 1,
+      "id": 17
+    },
+    {
+      "idUsers": 4,
+      "nameUsers": "yahia",
+      "passwordAUsers": "a1d123a63936abbee87823e2f1affa9b",
+      "mailUsers": "yahia@uqtr.ca",
+      "CPUsers": "CPNONUSERETU",
+      "statusUsers": 1,
+      "id": 18
+    },
+    {
+      "idUsers": 4,
+      "nameUsers": "yahia",
+      "passwordAUsers": "a1d123a63936abbee87823e2f1affa9b",
+      "mailUsers": "pahia@uqtr.ca",
+      "CPUsers": "CPNONUSERETU",
+      "statusUsers": 1,
+      "id": 19
+    },
+    {
+      "idUsers": 3,
+      "nameUsers": "maman",
+      "passwordAUsers": "0c96d00ebdf00445314bfae702f9d9c9",
+      "mailUsers": "mam@uqtr.ca",
+      "CPUsers": "mamanmaman22",
+      "statusUsers": 1,
+      "id": 20
+    },
+    {
+      "idUsers": 3,
+      "nameUsers": "maman",
+      "passwordAUsers": "0c96d00ebdf00445314bfae702f9d9c9",
+      "mailUsers": "mam@uqtr.ca",
+      "CPUsers": "mamanmaman22",
+      "statusUsers": 1,
+      "id": 21
+    },
+    {
+      "idUsers": 3,
+      "nameUsers": "momon",
+      "passwordAUsers": "0c96d00ebdf00445314bfae702f9d9c9",
+      "mailUsers": "mam@uqtr.ca",
+      "CPUsers": "mamanmaman22",
+      "statusUsers": 1,
+      "id": 22
+    },
+    {
+      "idUsers": 3,
+      "nameUsers": "momon",
+      "passwordAUsers": "2fabc0db8c3713ef806ec0b2cc88de26",
+      "mailUsers": "mam@uqtr.ca",
+      "CPUsers": "mamanmaman22",
+      "statusUsers": 1,
+      "id": 23
+    },
+    {
+      "idUsers": 3,
+      "nameUsers": "momon",
+      "passwordAUsers": "2fabc0db8c3713ef806ec0b2cc88de26",
+      "mailUsers": "mam@uqtr.ca",
+      "CPUsers": "mamanmaman22",
+      "statusUsers": 1,
+      "id": 24
+    },
+    {
+      "idUsers": 3,
+      "nameUsers": "momon",
+      "passwordAUsers": "0c96d00ebdf00445314bfae702f9d9c9",
+      "mailUsers": "mam@uqtr.ca",
+      "CPUsers": "mamanmaman22",
+      "statusUsers": 1,
+      "id": 25
+    },
+    {
+      "idUsers": 3,
+      "nameUsers": "momon",
+      "passwordAUsers": "0c96d00ebdf00445314bfae702f9d9c9",
+      "mailUsers": "mam@uqtr.ca",
+      "CPUsers": "mamanmaman22",
+      "statusUsers": 1,
+      "id": 26
+    },
+    {
+      "idUsers": 2,
+      "nameUsers": "elcarinos",
+      "passwordAUsers": "ced68bbaf266115c181c0186fb1f6809",
+      "mailUsers": "elcarinacours@uqtr.ca",
+      "CPUsers": "TETA07618800",
+      "statusUsers": 1,
+      "id": 27
+    },
+    {
+      "idUsers": 2,
+      "nameUsers": "elcarinos",
+      "passwordAUsers": "ced68bbaf266115c181c0186fb1f6809",
+      "mailUsers": "elcarinacours@uqtr.ca",
+      "CPUsers": "TETA07618800",
+      "statusUsers": 1,
+      "id": 28
+    },
+    {
+      "idUsers": 2,
+      "nameUsers": "elcarinos",
+      "passwordAUsers": "ced68bbaf266115c181c0186fb1f6809",
+      "mailUsers": "elcarinacours@uqtr.ca",
+      "CPUsers": "TETA07618800",
+      "statusUsers": 1,
+      "id": 29
+    },
+    {
+      "idUsers": 2,
+      "nameUsers": "elcarinos",
+      "passwordAUsers": "ced68bbaf266115c181c0186fb1f6809",
+      "mailUsers": "elcarinacours@uqtr.ca",
+      "CPUsers": "TETA07618800",
+      "statusUsers": 1,
+      "id": 30
+    },
+    {
+      "idUsers": 2,
+      "nameUsers": "elcarinos",
+      "passwordAUsers": "ced68bbaf266115c181c0186fb1f6809",
+      "mailUsers": "elcarinacours@uqtr.ca",
+      "CPUsers": "TETA07618800",
+      "statusUsers": 1,
+      "id": 31
+    },
+    {
+      "idUsers": 2,
+      "nameUsers": "elcarinas",
+      "passwordAUsers": "ced68bbaf266115c181c0186fb1f6809",
+      "mailUsers": "elcarinacours@uqtr.ca",
+      "CPUsers": "TETA07618800",
+      "statusUsers": 1,
+      "id": 32
+    },
+    {
+      "idUsers": 2,
+      "nameUsers": "elcarinas",
+      "passwordAUsers": "e10adc3949ba59abbe56e057f20f883e",
+      "mailUsers": "elcarinacours@uqtr.ca",
+      "CPUsers": "TETA07618800",
+      "statusUsers": 1,
+      "id": 33
+    },
+    {
+      "idUsers": 2,
+      "nameUsers": "elcarinas",
+      "passwordAUsers": "e10adc3949ba59abbe56e057f20f883e",
+      "mailUsers": "elcarinacours@uqtr.ca",
+      "CPUsers": "TETA07618800",
+      "statusUsers": 1,
+      "id": 34
+    },
+    {
+      "idUsers": 2,
+      "nameUsers": "elcarinas",
+      "passwordAUsers": "e10adc3949ba59abbe56e057f20f883e",
+      "mailUsers": "elcarinacours@uqtr.ca",
+      "CPUsers": "TETA07618800",
+      "statusUsers": 1,
+      "id": 35
+    },
+    {
+      "idUsers": 2,
+      "nameUsers": "elcarinas",
+      "passwordAUsers": "e10adc3949ba59abbe56e057f20f883e",
+      "mailUsers": "elcarinacours@uqtr.ca",
+      "CPUsers": "TETA07618800",
+      "statusUsers": 1,
+      "id": 36
+    },
+    {
+      "idUsers": 2,
+      "nameUsers": "elcarinas",
+      "passwordAUsers": "e10adc3949ba59abbe56e057f20f883e",
+      "mailUsers": "elcarinacours@uqtr.ca",
+      "CPUsers": "TETA07618800",
+      "statusUsers": 1,
+      "id": 37
+    },
+    {
+      "idUsers": 2,
+      "nameUsers": "elcarinas",
+      "passwordAUsers": "e10adc3949ba59abbe56e057f20f883e",
+      "mailUsers": "elcarinacours@uqtr.ca",
+      "CPUsers": "TETA07618800",
+      "statusUsers": 1,
+      "id": 38
+    }
+  ],
+  "region": [
+    {
+      "regId": 1,
+      "regNom": "BAS-ST-LAURENT"
+    },
+    {
+      "regId": 2,
+      "regNom": "SAGUENAY-LAC-SAINT-JEAN"
+    },
+    {
+      "regId": 3,
+      "regNom": "CAPITALE-NATIONALE (QUÉBEC)"
+    },
+    {
+      "regId": 4,
+      "regNom": " MAURICIE"
+    },
+    {
+      "regId": 1,
+      "regNom": "BAS-ST-LAURENT"
+    },
+    {
+      "regId": 1,
+      "regNom": "BAS-ST-LAURENT"
+    },
+    {
+      "regId": 1,
+      "regNom": "BAS-ST-LAURENT"
+    },
+    {
+      "regId": 1,
+      "regNom": "BAS-ST-LAURENT"
+    },
+    {
+      "regId": 1,
+      "regNom": "BAS-ST-LAURENT"
+    },
+    {
+      "regId": 1,
+      "regNom": "BAS-ST-LAURENT"
+    },
+    {
+      "regId": 1,
+      "regNom": "BAS-ST-LAURENT"
+    },
+    {
+      "regId": 1,
+      "regNom": "BAS-ST-LAURENT"
+    }
+  ],
+  "session": [
+    {
+      "sessId": 1,
+      "sessNom": "hiver 2021",
+      "sesstatut": 1
+    },
+    {
+      "sessId": 2,
+      "sessNom": "été 2021",
+      "sesstatut": 0
+    }
+  ],
+  "note": [
+    {
+      "resId": 4,
+      "idUser": 3,
+      "dateNote": "2021-05-02T22:07:39-04:00",
+      "descNote": "ça va bien aller",
+      "statutcNote": 1,
+      "id": 1
+    },
+    {
+      "resId": 4,
+      "idUser": 3,
+      "dateNote": "2021-05-02T22:09:33-04:00",
+      "descNote": "ça pourra bien allerça pourra bien aller ça pourra bien aller ça pourra bien aller ça pourra bien aller ça pourra bien aller ça pourra bien aller",
+      "statutcNote": 1,
+      "id": 2
+    },
+    {
+      "resId": 4,
+      "idUser": 2,
+      "dateNote": "2021-05-11T10:22:34-04:00",
+      "descNote": "je suis une note",
+      "statutcNote": 1,
+      "id": 3
+    }
+  ],
+  "comment": [
+    {
+      "commentUser": 3,
+      "commentRessource": 4,
+      "commentDate": "2021-05-02T22:11:42-04:00",
+      "commentDesc": "blabla bliblo",
+      "commentStatut": 1,
+      "id": 1
+    },
+    {
+      "commentUser": 3,
+      "commentRessource": 4,
+      "commentDate": "2021-05-02T22:25:30-04:00",
+      "commentDesc": "je suis un commentaire",
+      "commentStatut": 1,
+      "id": 2
+    },
+    {
+      "commentUser": 3,
+      "commentRessource": 4,
+      "commentDate": "2021-05-04T09:57:38-04:00",
+      "commentDesc": "ça va bien aller",
+      "commentStatut": 1,
+      "id": 3
+    },
+    {
+      "commentUser": 2,
+      "commentRessource": 4,
+      "commentDate": "2021-05-05T08:19:15-04:00",
+      "commentDesc": "je suis un commenatire",
+      "commentStatut": 1,
+      "id": 4
+    }
+  ],
+  "CP_Email": [
+    {
+      "mailUsers": "yahia@uqtr.ca",
+      "CPUsers": "yahiayahia22"
+    },
+    {
+      "mailUsers": "elcarinacours@uqtr.ca",
+      "CPUsers": "TETA07618800"
+    },
+    {
+      "mailUsers": "mam@uqtr.ca",
+      "CPUsers": "mamanmaman22"
+    },
+    {
+      "mailUsers": "pierrette@uqtr.ca",
+      "CPUsers": "123456789101"
+    }
+  ]
+}

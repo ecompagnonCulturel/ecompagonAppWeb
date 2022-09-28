@@ -1,0 +1,126 @@
+<ion-header color="secondary">
+    <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+            <ion-menu-button>
+            </ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            <i>e</i>Compagnon culturel
+        </ion-title>
+
+    </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+    <div class="container">
+        <mat-grid-list cols="2" rowHeight="3:3">
+            <mat-grid-tile [routerLink]="'/resource/category'">
+                <div class="titleR ion-padding">
+                    <div class="icone">
+                        <span class="material-icons ">
+                          gradient
+                       </span>
+
+                    </div>
+
+                    <ion-label>
+                        Ressources culturelles mobilisées dans des cours
+                        du BÉPEP<span class="evidencer">({{TotalResource}})</span>
+                    </ion-label>
+
+                </div>
+
+
+            </mat-grid-tile>
+            <mat-grid-tile [routerLink]="'/favoris'">
+
+                <div class="titleR ion-padding">
+                    <div class="iconeR">
+                        <mat-icon>
+                            <span class="material-icons">
+                          star_border
+                        </span>
+                        </mat-icon>
+
+                    </div>
+                    <ion-label>
+                        Mes ressources favorites<span class="evidencer">({{TotalFavoris}})</span>
+                    </ion-label>
+                </div>
+
+
+            </mat-grid-tile>
+            <mat-grid-tile [routerLink]="'/questionnaire'">
+
+                <div class="titleR">
+                    <div class="icone">
+                        <mat-icon>
+                    <span class="material-icons" matBadge="{{TotalQuestionnaire}}" matBadgeColor="warn"
+                          *ngIf="TotalQuestionnaire>0">
+                           live_help
+                        </span>
+                            <span class="material-icons" *ngIf="TotalQuestionnaire==0">
+                           live_help
+                        </span>
+                        </mat-icon>
+                    </div>
+                    <ion-label>
+                        Questionnaire sur mes expériences culturelles
+                    </ion-label>
+
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile [routerLink]="'/home/profile/details'">
+
+                <div class="titleR ion-padding">
+                    <div class="icone">
+                        <mat-icon>
+                    <span class="material-icons">
+                           person_pin
+                        </span>
+                        </mat-icon>
+                    </div>
+                    <ion-label>
+                        Profil et À propos
+                    </ion-label>
+                </div>
+
+
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+
+</ion-content>
+<ion-footer>
+    <ion-tabs>
+        <ion-tab-bar slot="bottom" color="secondary">
+            <ion-tab-button tab="resource/category">
+              <span class="material-icons rouge">
+                    gradient
+              </span>
+                <label class="evidence">Ressources</label>
+            </ion-tab-button>
+            <ion-tab-button tab="favoris">
+              <span class="material-icons rouge">
+                star_border
+              </span>
+                <label class="evidence">Favoris</label>
+            </ion-tab-button>
+            <ion-tab-button tab="questionnaire">
+              <span class="material-icons rouge">
+                live_help
+                </span>
+                <label class="evidence">Questionnaire</label>
+            </ion-tab-button>
+            <ion-tab-button tab="profile/details">
+              <span class="material-icons rouge">
+                person_pin
+                </span>
+                <label class="evidence">Profil</label>
+            </ion-tab-button>
+
+
+        </ion-tab-bar>
+
+    </ion-tabs>
+</ion-footer>
+

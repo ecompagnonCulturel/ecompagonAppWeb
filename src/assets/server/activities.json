@@ -1,0 +1,9 @@
+{
+  "activities":
+  [
+    {"id":1,"sessionAct":"hivers 2021","typeAct":"éducatif","lieu":"Yoststad","lieuAct":"2021-01-06T09:22:41.170Z","commentaireAct":"","photoAct":"","updateDateAct":"2021-01-06T09:56:16.205Z","statusAct":1},
+    {"id":2,"sessionAct":"hivers 2021","typeAct":"éducatif","lieu":"New Graysonbury","lieuAct":"2021-01-05T23:05:48.038Z","commentaireAct":"","photoAct":"","updateDateAct":"2021-01-05T23:48:55.020Z","statusAct":1},
+    {"id":3,"sessionAct":"hivers 2021","typeAct":"éducatif","lieu":"Lake Raulmouth","lieuAct":"2021-01-05T19:28:07.154Z","commentaireAct":"","photoAct":"","updateDateAct":"2021-01-06T00:28:07.894Z","statusAct":0},
+    {"id":4,"sessionAct":"hivers 2021","typeAct":"éducatif","lieu":"West Naomi","lieuAct":"2021-01-05T11:57:16.874Z","commentaireAct":"","photoAct":"","updateDateAct":"2021-01-05T11:31:07.192Z","statusAct":0}
+  ]
+}

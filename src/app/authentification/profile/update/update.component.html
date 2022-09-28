@@ -1,0 +1,84 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-buttons slot="end">
+        </ion-buttons>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="home/profile"></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+            Formation/ compte
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <div class="title">
+        <h2>
+            Modifier votre compte
+        </h2>
+    </div>
+    <div>
+        <form (ngSubmit)="updateUser()" [formGroup]="updateAccount">
+
+            <div class="input-group">
+                <div *ngIf="message!=null" class="message" class="message">
+                    {{message}}
+                </div>
+                <ion-item>
+                    <ion-input formControlName="lastname" placeholder="nom " type="text"></ion-input>
+                </ion-item>
+                <div *ngIf="(lastname.dirty|| lastname.touched) && lastname.errors" class="errors">
+                    <span *ngIf="lastname.errors?.required">Nom obligatoire</span>
+                </div>
+                <ion-item>
+                    <ion-input formControlName="firstname" placeholder="nom " type="text"></ion-input>
+                </ion-item>
+                <div *ngIf="(firstname.dirty|| firstname.touched) && firstname.errors" class="errors">
+                    <span *ngIf="firstname.errors?.required">Prenom obligatoire</span>
+                </div>
+                <ion-item>
+                    <ion-input disabled="true" formControlName="mailUsers" placeholder="prenom.nom@uqtr.ca"
+                               type="text"></ion-input>
+                </ion-item>
+                <div *ngIf="(mailUsers.dirty || mailUsers.touched) && mailUsers.errors" class="errors">
+                    <span *ngIf="mailUsers.errors?.required">Courriel obligatoire</span>
+                    <!--<span *ngIf="mailUsers.errors?.email">Courriel non valide</span>-->
+                    <span *ngIf="mailUsers.errors?.invalidMail||mailUsers.errors?.email">Couriel de l'uqtr</span>
+                </div>
+                <div *ngIf="(currentUser!=null) &&(currentUser.CPUsers!='CPNONUSERETU')">
+                    <ion-item>
+                        <ion-input disabled="true" formControlName="CPUsers" placeholder="code Permanent"
+                                   type="text"></ion-input>
+                    </ion-item>
+                    <div *ngIf="(CPUsers.dirty || CPUsers.touched) && CPUsers.errors" class="errors">
+                        <span *ngIf="CPUsers.errors?.required||CPUsers.errors?.minlength||CPUsers.errors?.maxlength">12 caractères exacts pour le code permanent</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="left">
+                    <ion-button color="secondary" routerLink="../details" size="small" type="button">
+              <span class="material-icons">
+                update_disabled
+                </span>
+                        Annuler
+                    </ion-button>
+                </div>
+                <div class="right">
+                    <ion-button [disabled]="!updateAccount.valid" color="primary" size="small" type="submit">
+          <span class="material-icons">
+            save
+            </span>
+                        Valider
+                    </ion-button>
+
+                </div>
+            </div>
+
+        </form>
+    </div>
+</ion-content>
+
+

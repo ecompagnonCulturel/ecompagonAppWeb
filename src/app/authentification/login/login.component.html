@@ -1,0 +1,71 @@
+<!--<ion-header>
+    <ion-img src="../../../assets/images/logo.png"></ion-img>
+</ion-header>-->
+<ion-content class="ion-padding">
+    <mat-card>
+        <mat-card-header>
+            <ion-img src="../../../assets/images/logo.png"></ion-img>
+        </mat-card-header>
+
+    <div class="entete">
+        <ion-buttons>
+         <span class="material-icons">
+      lock
+    </span>
+            <div class="h1">
+                <h1>
+                    Connexion
+                </h1>
+            </div>
+        </ion-buttons>
+
+    </div>
+
+
+    <form (ngSubmit)="login()" [formGroup]="credentials">
+        <div class="input-group">
+            <ion-item>
+                <ion-input type="email" placeholder="Courriel" formControlName="email" ></ion-input>
+            </ion-item>
+            <div *ngIf="(email.dirty || email.touched) && email.errors" class="errors">
+                <span *ngIf="email.errors?.required">Courriel obligatoire</span>
+                <span *ngIf="email.errors?.email">Courriel invalide</span>
+            </div>
+            <ion-item>
+                <ion-input [type]="passwordType" placeholder="mot de passe" formControlName="password"></ion-input>
+                <ion-icon name="eye" [color]="passswordIsShown===true?'secondary':'red'"
+                          [style]="passswordIsShown===true?'opacity:100%':'opacity:50%'" item-end
+                          (click)="passwordVisible()"></ion-icon>
+            </ion-item>
+            <div *ngIf="(password.dirty || password.touched) && password.errors" class="errors">
+                <span *ngIf="password.errors?.required">mot de passe obligatoire</span>
+                <span *ngIf="password.errors?.minlength">le mot de passe est de 6 caractères au moins</span>
+            </div>
+        </div>
+
+        <ion-button type="submit" expand="block" [disabled]="!credentials.valid">
+            <span class="material-icons ">
+                  login
+            </span>
+            <div class="padding">Se connecter</div>
+        </ion-button>
+
+        <mat-card-footer>
+            <div class="left">
+                <a text-center routerLink="../create">
+                    Créer compte
+                </a>
+            </div>
+            <div class="right" >
+
+                <a text-center routerLink="../init"  >
+                    mot de passe oublié
+                </a>
+
+            </div>
+        </mat-card-footer>
+
+    </form>
+    </mat-card>
+</ion-content>
+

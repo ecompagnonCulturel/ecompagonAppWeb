@@ -1,0 +1,4 @@
+{
+
+  "profile":[{"idProfile":1,"descProfile":"Formateur","status":1},{"idProfile":2,"descProfile":"Etudiant","status":1},{"idProfile":3,"descProfile":"Chercheur","status":1},{"idProfile":4,"descProfile":"Administrateur","status":1}],
+}

@@ -1,0 +1,259 @@
+.example-container {
+  position: relative;
+  padding: 5px;
+  height: 100%;
+  background-color: aqua;
+}
+
+.example-loading-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 56px;
+  right: 0;
+//   background: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mat-flat-button {
+  margin: 5px;
+}
+
+// Slider Style START
+.custon-nav{
+  height: 48px;
+  width: 20px;
+  cursor: pointer;
+
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.prev-icon-custom{
+  background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png) no-repeat scroll 0px 0px;
+}
+.prev-icon-custom.disabled{
+  opacity: 0.4;
+  cursor: default;
+}
+.next-icon-custom{
+  background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png) no-repeat scroll -32px 0px;
+}
+.next-icon-custom.disabled{
+  opacity: 0.4;
+  cursor: default;
+}
+.slider-nav{
+  ion-icon{
+      height: 100%;
+  }
+}
+
+.slide-text{
+  position: absolute;
+  color: white;
+  bottom: 30px;
+}
+
+.gras
+{
+  font-weight: bold;
+
+}
+
+.material-icons.secondary{ color: #00838F }
+
+.gras.title
+{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px!important;
+
+
+}
+
+.dell{
+  color: #FF2525;
+  cursor: pointer;
+  width: 15%;
+  // background-color: #1B4260;
+  float: right;
+  height: 40%;
+
+}
+
+.dellDisable{
+  color: #FF2525;
+  cursor: pointer;
+  width: 15%;
+  // background-color: #1B4260;
+  float: right;
+  height: 40%;
+  opacity: 50%;
+  //background-color: black;
+  display: none;
+
+}
+.chevron{
+  // color: #FF2525;
+  cursor: pointer;
+  width: 15%;
+  // background-color: #FF2525;
+  float: right;
+  height: 40%;
+  background: url('https://api.iconify.design/ion-chevron-right.svg') no-repeat center center / contain;
+  opacity: 30%;
+}
+.right{
+  margin-left: 50%;
+
+}
+.winWidth{
+  width: 90%;
+  // background-color: #1B4260;
+}
+
+.nom{
+  text-align: justify;
+  // background-color: #2fdf75;
+}
+.dure{
+  text-align: justify;
+  width: 100%;
+  float: left;
+  font-size: 13px;
+  margin-bottom: 5%;
+}
+.dureCurrent{
+ /* opacity: 70%;*/
+  font-size: 13px;
+  width:70% ;
+  margin-bottom: 5%;
+
+}
+
+
+
+.note{
+  cursor: pointer;
+  // background-color: #121212;
+  height: 100%;
+  text-align: justify;;
+  width: 100%;
+  float: left;
+  //opacity: 70%;
+  font-size: 15px;
+
+
+}
+
+.mat-expanded .mat-expansion-panel-header-title .material-icons{
+  opacity: 100%;
+  width: 50%;
+}
+
+.date{
+  color: #00838F;
+  width: 80%;
+  float: left;
+  // background-color: #5d58e0;
+}
+mat-divider {
+  border-top-color: #00838F;
+  // border: solid;
+  width: 100%;
+  margin-bottom: 1%;
+  background-color: #00838F ;
+  //height: 20px;
+  // position: absolute;
+}
+
+
+
+.entete{
+  // flex-direction: column;
+  width: 100%;
+  //background-color: #2fdf75;
+
+}
+
+.material-icons{
+  margin-right: 2px!important;
+
+}
+.iconePosition{
+  margin-top: 10px!important;
+  margin-left: 4%!important;
+  float: right;
+
+}
+.avatar{
+  // align-items: center!important;
+  //justify-content:center!important;
+  width: 100% !important;
+  padding-left: 30%;
+  //background-color: black!important;
+
+}
+.showCours{
+ // background-color: #2fdf75;
+ // margin-left: 90%;
+  font-size: 75%;
+  width: 100%;
+  //margin-right: 2%;
+  float: right;
+}
+.showCoursbutton{
+  float: right!important;
+  font-size: 120% !important;
+}
+.div {
+  //background-color: black!important;
+  width: 100% !important;
+}
+.small{
+  width: 75% !important;
+  margin-left: 10% !important;
+  margin-top: 5% !important;
+  margin-bottom: 2% !important;
+}
+
+.decale{
+  margin-top: 6% !important;
+}
+
+.decale_titreCours{
+  margin-top: 2% !important;
+}
+
+.space{
+  margin-left: 1%;
+}
+.leftSpace{
+  float: right!important;
+
+}
+
+.red{
+  color: #cf3c4f;
+}
+
+ion-item-divider{
+  color: #000000;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+}
+.allWidth
+{
+  width: 30%;
+  background-color: white;
+  float: right;
+}
+
+
+

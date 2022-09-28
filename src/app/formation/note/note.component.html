@@ -1,0 +1,41 @@
+<ion-header>
+  Ajouter/modifier  une note personnelle
+</ion-header>
+
+
+<ion-content >
+  <mat-card>
+    <div>
+      <div>
+        <form (ngSubmit)="submit()" [formGroup]="noteForm">
+          <div class="input-group">
+            <ion-item>
+              <ion-textarea formControlName="noteDesc" name="noteDesc" id="noteDesc"
+                            type="text" cols="10" rows="14" >
+              </ion-textarea>
+            </ion-item>
+            <div *ngIf="(noteDesc.dirty|| noteDesc.touched) && noteDesc.errors" class="errors">
+              <span *ngIf="noteDesc.errors?.required">Note  obligatoire</span>
+              <span *ngIf="noteDesc.errors?.maxlength">Au plus 1499 caractères</span>
+            </div>
+          </div>
+        <mat-card-footer>
+            <div class="right">
+              <ion-button [disabled]="!noteForm.valid"  type="submit">
+               <span class="green">OK</span>
+              </ion-button>
+
+            </div>
+            <div class="left">
+              <ion-button (click)="closeDialog()" type="button" >
+                <span class="red">Annuler</span>
+              </ion-button>
+            </div>
+
+        </mat-card-footer>
+
+        </form>
+      </div>
+    </div>
+  </mat-card>
+</ion-content>

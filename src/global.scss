@@ -1,0 +1,256 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+/*@import "~@ionic/angular/css/typography.css";*/
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+@import '~@angular/material/theming';
+@include mat-core();
+/*
+ * This adds a scroll bar to ionic alerts
+ */
+.alert-radio-group::-webkit-scrollbar, .alert-checkbox-group::-webkit-scrollbar {
+    width: 0.7em;
+    display: block !important;
+}
+
+.alert-radio-group::-webkit-scrollbar-track, .alert-checkbox-group::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.alert-radio-group::-webkit-scrollbar-thumb, .alert-checkbox-group::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+.input {
+    --backdrop-opacity: 0.6;
+    --height: 67% !important;
+    /*--background: linear-gradient(40deg, rgb(0, 201, 184) 10%, rgb(248, 255, 248) 100%);*/
+    .alert-title.sc-ion-alert-md, .alert-title.sc-ion-alert-ios {
+        font-size: 16px;
+        color: #00838F;
+        text-align: justify-all!important;
+        border-bottom: solid;
+    }
+
+    .alert-message.sc-ion-alert-md, .alert-message.sc-ion-alert-ios {
+        color: #00838F;
+    }
+
+    .alert-button.sc-ion-alert-md, .alert-button.sc-ion-alert-ios {
+        color: #00838F;
+        // background-color: red;
+        width: 100px;
+        border-radius: 5px;
+
+    }
+    .alert-input {
+       border-color:#00838F!important;
+        border-radius: 5px!important;
+        font-family: "Times New Roman"!important;
+        font-size: 20px!important;
+        text-align: justify!important;
+    }
+    .alert-wrapper {
+        .alert-button-group {
+            justify-content: center;
+        }
+
+        .alert-button {
+            border: 1px solid #00838F;
+        }
+
+        .alert-input {
+            border: 1px solid #00838F;
+        }
+        .alert-button-inner {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+        .alert-button:first-child {
+            color: red;
+        }
+        }
+
+}
+
+/////
+
+
+.comment {
+    --backdrop-opacity: 0.6;
+    --height: 67% !important;
+    /*--background: linear-gradient(40deg, rgb(0, 201, 184) 10%, rgb(248, 255, 248) 100%);*/
+    .alert-title.sc-ion-alert-md, .alert-title.sc-ion-alert-ios {
+        font-size: 16px;
+        color: #00838F;
+        text-align: justify-all!important;
+        border-bottom: solid;
+    }
+
+    .alert-message.sc-ion-alert-md, .alert-message.sc-ion-alert-ios {
+        color: #00838F;
+    }
+
+    .alert-button.sc-ion-alert-md, .alert-button.sc-ion-alert-ios {
+        color: #00838F;
+        // background-color: red;
+        width: 100px;
+        border-radius: 5px;
+    }
+    .alert-input {
+        border-color:#00838F!important;
+        border-radius: 5px!important;
+        font-family: "Times New Roman"!important;
+        font-size: 20px!important;
+        text-align: justify!important;
+    }
+    .alert-wrapper {
+        .alert-button-group {
+            justify-content: center;
+
+
+        }
+
+        .alert-button {
+            border: 1px solid #00838F;
+
+        }
+
+        .alert-input {
+            border: 1px solid #00838F;
+
+        }
+        .alert-button-inner {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+        .alert-button:first-child {
+            color: red;
+        }
+
+
+    }
+
+
+    .alert-style{
+        padding-left: 2px;
+    }
+
+
+}
+
+
+/*#rate_div .sc-ion-buttons-md-s ion-button {
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --padding-start: 10% !important;
+    --padding-end: 4px;
+    --box-shadow: none;
+    height: 20px;
+    font-size: 10px;
+}*/
+#radio {
+    margin-top: 5% !important;
+    ion-buttons {
+        float: inside;
+    }
+    ion-button {
+        width: 75% !important;
+        height: 20px !important;
+        display: contents;
+    }
+    ion-icon {
+        width: 18px;
+        height: 20px;
+        color: #3DC2FF;
+
+        &.filled {
+            //color: #ffb400;
+            color: var(--ion-color-RRyellow) !important;
+        }
+    }
+}
+
+
+
+.modal-wrapper{
+    background: transparent !important;
+}
+
+/*.mat-slider-track-fill {
+    background-color: #3DC2FF !important;
+}
+
+.mat-slider-thumb-label {
+    background-color: #3DC2FF !important;
+
+}
+
+.mat-slider-thumb {
+    background-color: #3DC2FF !important;
+}
+.mat-slider {
+    background-color: #3DC2FF !important;
+} 1B4260*/
+
+.mat-slider.mat-slider-horizontal .mat-slider-wrapper {
+    top: 18px;
+}
+.mat-slider.mat-slider-horizontal .mat-slider-track-wrapper {
+    height: 2px;
+    border-radius: 2%;
+    background-color: gray;
+
+}
+.mat-slider.mat-slider-horizontal .mat-slider-track-background,
+.mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+    height: 100%;
+}
+.mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+    background-color: #3DC2FF;
+}
+.mat-accent .mat-slider-thumb {
+    height: 30px;
+    width: 30px;
+    background-color: #3DC2FF;
+    border: solid 2px gray;
+    bottom: -20px;
+    right: -20px;
+}
+.mat-slider-min-value:not(.mat-slider-thumb-label-showing) .mat-slider-thumb {
+    background-color: #3DC2FF;
+}
+
+ion-title{
+    text-align: center;
+}
+
+
+
+
+
+

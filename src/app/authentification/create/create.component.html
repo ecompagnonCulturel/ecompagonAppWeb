@@ -1,0 +1,114 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="login"></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+            Creation de compte
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <mat-card>
+    <div>
+        <ion-img src="../../../assets/images/create.png"></ion-img>
+
+        <div>
+            <form (ngSubmit)="create()" [formGroup]="account">
+                <div class="input-group">
+                    <div *ngIf="exist==true" class="message" class="message">
+                        <ion-label class="exit" mat-line>Vous avez déjà un compte.</ion-label>
+                        <ion-label class="exit" mat-line><br>Connectez vous plutôt</ion-label>
+                    </div>
+                    <div *ngIf="message!=null" class="message" class="message">
+                        {{message}}
+                    </div>
+                    <ion-item>
+                        <ion-input formControlName="firstname" placeholder="prenom " type="text"></ion-input>
+                    </ion-item>
+                    <div *ngIf="(firstname.dirty|| firstname.touched) && firstname.errors" class="errors">
+                        <span *ngIf="firstname.errors?.required">Prenom obligatoire</span>
+                    </div>
+                    <ion-item>
+                        <ion-input formControlName="nameUsers" placeholder="nom " type="text"></ion-input>
+                    </ion-item>
+                    <div *ngIf="(nameUsers.dirty|| nameUsers.touched) && nameUsers.errors" class="errors">
+                        <span *ngIf="nameUsers.errors?.required">Nom  obligatoire</span>
+                    </div>
+
+                    <ion-item>
+                        <ion-input formControlName="mailUsers" id="mailUsers" placeholder="prenom.nom@uqtr.ca" type="text">
+                    <!-- onkeyup="return forceLower(this);"-->
+                        </ion-input>
+                    </ion-item>
+                    <div *ngIf="(mailUsers.dirty || mailUsers.touched) && mailUsers.errors" class="errors">
+                        <span *ngIf="mailUsers.errors?.required||mailUsers.errors?.invalidMail||mailUsers.errors?.email">Courriel de l'uqtr obligatoire</span>
+                        <!--<span *ngIf="mailUsers.errors?.email">Courriel non valide</span>-->
+                        <!--<span *ngIf="mailUsers.errors?.invalidMail||mailUsers.errors?.email">Couriel de l'uqtr</span>-->
+                    </div>
+                    <ion-item>
+                        <ion-input formControlName="CPUsers" placeholder="code Permanent" type="text"
+                        ></ion-input>
+                    </ion-item>
+                    <div *ngIf="(CPUsers.dirty || CPUsers.touched) && CPUsers.errors" class="errors">
+                        <!-- <span *ngIf="CPUsers.errors?.required">Code permanent  obligatoire</span>-->
+                        <span *ngIf="CPUsers.errors?.required||CPUsers.errors?.minlength||CPUsers.errors?.maxlength">12 caractères exacts pour le code permanent</span>
+
+                    </div>
+                    <ion-item>
+                        <ion-input [type]="passwordType" formControlName="passwordAUsers"
+                                   placeholder="mot de passe"></ion-input>
+                        <ion-icon (click)="PasswordVisible()" [color]="passswordIsShown===true?'secondary':'red'"
+                                  [style]="passswordIsShown===true?'opacity:100%':'opacity:50%'" item-end
+                                  name="eye"></ion-icon>
+                    </ion-item>
+                    <div *ngIf="(passwordAUsers.dirty || passwordAUsers.touched) && passwordAUsers.errors"
+                         class="errors">
+                        <span *ngIf="passwordAUsers.errors?.required">mot de passe obligatoire</span>
+                        <span *ngIf="passwordAUsers.errors?.minlength">6 caractères au moins pour le mot de passe</span>
+                    </div>
+                    <ion-item>
+                        <ion-input [type]="cpasswordType" formControlName="confirmpasswordAUsers"
+                                   placeholder="Confirmer mot de passe"></ion-input>
+                        <ion-icon (click)="cPasswordVisible()" [color]="cpassswordIsShown===true?'secondary':'red'"
+                                  [style]="cpassswordIsShown===true?'opacity:100%':'opacity:50%'" item-end
+                                  name="eye"></ion-icon>
+                    </ion-item>
+                    <div *ngIf="(confirmpasswordAUsers.dirty || confirmpasswordAUsers.touched) && confirmpasswordAUsers.errors"
+                         class="errors">
+                        <div *ngIf="account.errors?.invalidPassword||confirmpasswordAUsers.errors?.minlength||confirmpasswordAUsers.errors"
+                             class="errors">
+                            <span>Les deux mots de passe doivent  correspondre</span>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="right">
+                        <ion-button [disabled]="!account.valid" color="primary" size="small" type="submit">
+                      <span class="material-icons">
+                        save
+                        </span>
+                            Valider
+                        </ion-button>
+
+                    </div>
+                    <div class="left">
+                        <ion-button color="secondary" routerLink="" size="small" type="button">
+              <span class="material-icons">
+                update_disabled
+                </span>
+                            Annuler
+                        </ion-button>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+    </mat-card>
+</ion-content>

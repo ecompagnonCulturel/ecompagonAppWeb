@@ -1,0 +1,53 @@
+<ion-content overflow-scroll="false" class="ion-padding">
+
+    <ion-toolbar >
+        <ion-item color="primary">
+            <!--        <ion-label >Catégories</ion-label>-->
+            <ion-select [(ngModel)]="selectedValues" (ionChange)="getRessourceByCat()"   interface="action-sheet" ok-text="Ok" cancel-text="Annuler" placeholder="Trier par type">
+                <ion-select-option (ionSelect)="selectAllCategories" >Toutes</ion-select-option>
+                <span class="material-icons">
+               meseum
+             </span>
+                <ion-icon name="star">
+                    <ion-select-option [value]="cat.trdesc" *ngFor="let cat of category " >
+                      {{cat.trdesc}}
+                    </ion-select-option>
+                </ion-icon>
+            </ion-select>
+        </ion-item>
+    </ion-toolbar>
+    <ion-list>
+        <div class="container" *ngIf="selectedValues!='Lieux'" >
+
+            <ion-item *ngFor="let p of resource" class="ion-text-wrap" button (click)="detail(p.id)"    >
+
+
+                   <span class="material-icons blue">
+                        {{p.ressType.travatar}}
+                    </span>
+                <ion-label class="ion-text-wrap">
+                    {{p.ressDesc}}
+                </ion-label>
+            </ion-item>
+
+
+        </div>
+
+        <div class="container" *ngIf="selectedValues=='Lieux'" >
+
+            <div *ngFor="let reg of region" >
+                <ion-item-divider>{{reg.regNom}}</ion-item-divider>
+                <ion-item *ngFor="let p of resource|regObject:reg"class="example-item" button (click)="detail(p.id)"  cdkDrag>
+                   <!-- <div *ngIf="reg===p.ressRegion">-->
+                          <span class="material-icons blue">
+                        {{p.ressType.travatar}}
+                     </span>
+                        {{p.ressDesc}}
+                   <!-- </div>-->
+                </ion-item>
+            </div>
+        </div>
+    </ion-list>
+
+
+</ion-content>

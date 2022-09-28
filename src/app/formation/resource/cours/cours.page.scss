@@ -1,0 +1,91 @@
+.example-viewport {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+ion-select {
+  max-width: 100% !important;
+  width: 100% !important;
+
+}
+.my-class .select-interface-option {
+  --color: #971e49;
+  --color-hover: #79193b;
+}
+
+ion-select::part(placeholder) {
+  //color: #20a08a;
+  opacity: 1;
+}
+
+ion-select::part(icon) {
+  // color: #971e49;
+  opacity: 1;
+  // width: 50px;
+
+}
+
+ion-select::part(text) {
+  //color: #545ca7;
+  font-size: 20px;
+}
+
+/*
+ion-select {
+  --background: black!important;
+
+  button {
+    color: white !important;
+    font-size: 20px !important;
+  }
+
+
+  .sc-ion-alert-md {
+    color: white;
+  }
+}
+*/
+.gras {
+  font-weight: bold;
+}
+
+.right {
+  align: end;
+}
+
+.material-icons.md-light {
+  color: rgba(66, 167, 255, 0.96);
+}
+
+.material-icons.orange600 {
+  color: #FB8C00;
+}
+
+.material-icons.blue {
+  color: #3dc2ff;
+}
+
+.material-icons.bluef {
+  color: #4F6E8E;
+}
+
+.material-icons.vert {
+  color: #2AB200;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}

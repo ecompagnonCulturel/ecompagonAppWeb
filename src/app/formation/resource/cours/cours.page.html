@@ -1,0 +1,27 @@
+<ion-content class="ion-padding" >
+  <ion-toolbar >
+        <ion-item color="primary">
+            <ion-select [(ngModel)]="selectedValues"  (ionChange)="getResourceByCours()"  #selectCours interface="action-sheet" ok-text="Ok" cancel-text="Annuler" placeholder="Trier par cours" class="custom-options" >
+                <ion-select-option>Tous</ion-select-option>
+
+                 <ion-select-option [value]="cr.id" *ngFor="let cr of cours " >
+                        {{cr.coursDes}}
+                 </ion-select-option>
+
+            </ion-select>
+        </ion-item>
+    </ion-toolbar>
+    <ion-list>
+        <ion-item *ngFor="let r of resourceCours" class="example-item" button (click)="detail(r.id)" cdkDrag>
+            <span class="material-icons blue">
+                {{r.ressType.travatar}}
+             </span>
+            <ion-label class="ion-text-wrap">
+                {{r.ressDesc}}
+            </ion-label>
+
+        </ion-item>
+    </ion-list>
+
+
+</ion-content>

@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="home"></ion-back-button>
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title ><ion-label   class="gras">Ressources culturelles mobilisées dans des cours du BÉPEP</ion-label></ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <cdk-virtual-scroll-viewport cdkDropList itemSize="10" class="example-viewport">
+        <div class="container" >
+
+            <ion-item *cdkVirtualFor="let p of resource.slice(0, 5);" class="example-item"  cdkDrag >
+                <div>
+              <span class="material-icons blue">
+                {{p.ResType.cateAvatUrl}}
+             </span>
+                    {{p.ResDesc}}
+                </div>
+            </ion-item>
+        </div>
+    </cdk-virtual-scroll-viewport>
+    <ion-tabs >
+        <ion-tab-bar slot="bottom" color="secondary">
+            <ion-tab-button tab="category">
+        <span class="material-icons rouge">
+          filter_none
+          </span>
+                <label class="evidence">Trier par type</label>
+            </ion-tab-button>
+            <ion-tab-button tab="cours">
+
+       <span class="material-icons rouge">
+        menu_book
+        </span>
+                <label class="evidence">Trier par cours</label>
+            </ion-tab-button>
+        </ion-tab-bar>
+
+    </ion-tabs>
+</ion-content>
+

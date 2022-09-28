@@ -1,0 +1,15 @@
+{
+  "course":[{"id":1,"courSession":"hivers 2021","courDesc":"cours1","courType":"éducatif","courDateStart":"2021-01-12T03:29:00.546Z","courProf":"Prof cours1","courDateEnd":"2021-01-11T23:24:42.445Z","courIntention":"Intention cours1","courResource":"","courStudGroup":"Student groupe1","courUpdateDate":"2021-01-12T03:48:14.404Z","courStatus":1},
+    {"id":2,"courSession":"hivers 2021","courDesc":"cours2","courType":"éducatif","courDateStart":"2021-01-11T17:57:23.541Z","courProf":"Prof cours2","courDateEnd":"2021-01-12T11:58:14.559Z","courIntention":"Intention cours2",
+      "courResource":[{"id":1,"ResSession":"hivers 2021","ResDesc":"ressources1","ResType":"éducatif","ResDate":"2021-01-11T10:54:06.553Z","ResComment":"","ResLike":"","ResPicture":"","ResUpdateDate":"2021-01-11T16:10:48.908Z","ResStatus":1},
+                      {"id":2,"ResSession":"hivers 2021","ResDesc":"ressources2","ResType":"éducatif","ResDate":"2021-01-10T22:12:50.443Z","ResComment":"","ResLike":"","ResPicture":"","ResUpdateDate":"2021-01-11T18:01:52.060Z","ResStatus":1}
+                      ],
+      "courStudGroup":"Student groupe2","courUpdateDate":"2021-01-12T07:31:21.841Z","courStatus":1},
+    {"id":3,"courSession":"hivers 2021","courDesc":"cours3","courType":"éducatif","courDateStart":"2021-01-11T22:34:36.206Z","courProf":"Prof cours3","courDateEnd":"2021-01-11T23:15:13.607Z","courIntention":"Intention cours3","courResource":"","courStudGroup":"Student groupe3","courUpdateDate":"2021-01-12T01:47:46.714Z","courStatus":1},
+    {"id":4,"courSession":"hivers 2021","courDesc":"cours4","courType":"éducatif","courDateStart":"2021-01-12T00:32:15.607Z","courProf":"Prof cours4","courDateEnd":"2021-01-12T05:09:54.636Z","courIntention":"Intention cours4",
+      "courResource": [{"id":3,"ResSession":"hivers 2021","ResDesc":"ressources3","ResType":"éducatif","ResDate":"2021-01-11T14:38:53.317Z","ResComment":"","ResLike":"","ResPicture":"","ResUpdateDate":"2021-01-11T13:33:54.222Z","ResStatus":1},
+                        {"id":4,"ResSession":"hivers 2021","ResDesc":"ressources4","ResType":"éducatif","ResDate":"2021-01-11T16:11:02.080Z","ResComment":"","ResLike":"","ResPicture":"","ResUpdateDate":"2021-01-11T17:22:55.746Z","ResStatus":1}
+                      ],
+      "courStudGroup":"Student groupe4","courUpdateDate":"2021-01-11T23:48:11.432Z","courStatus":1}
+          ]
+}

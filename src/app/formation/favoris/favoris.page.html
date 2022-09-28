@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+      <ion-title><ion-label text-wrap>Favoris</ion-label></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+<!--  <cdk-virtual-scroll-viewport cdkDropList itemSize="10" class="example-viewport" (cdkDropListDropped)="drop($event)">
+<ion-item *cdkVirtualFor="let f of favoris" class="example-item" button (click)="detail(f.id)" cdkDrag>
+    <span class="material-icons blue">
+        {{f.ResType.cateAvatUrl}}
+    </span>
+    {{f.ResDesc}}
+    </ion-item>
+  </cdk-virtual-scroll-viewport>-->
+    <ion-list>
+        <ion-item *ngFor="let f of favoris" class="example-item" button (click)="detail(f.id)" cdkDrag>
+    <span class="material-icons blue">
+        {{f.ressType.travatar}}
+    </span>
+            <ion-label class="ion-text-wrap">
+                {{f.ressDesc}}
+            </ion-label>
+        </ion-item>
+    </ion-list>
+    <div  id="container" *ngIf="favorisLenggth==0">
+        <h1> Vous n'avez pas encore de ressources favorites</h1>
+    </div>
+</ion-content>
+<!--
+<ion-tabs >
+  <ion-tab-bar slot="bottom" color="secondary">
+
+  </ion-tab-bar>
+
+</ion-tabs>
+-->

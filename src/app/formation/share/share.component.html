@@ -1,0 +1,28 @@
+<div padding class="mainContent">
+  <div no-margin margin-top class="feedbackCard">
+    <ion-row class="textCenter">
+      <div>
+        Partager la ressouce sur :
+      </div>
+    </ion-row>
+<div class="logoList">
+      <ion-row>
+          <ion-col>
+              <share-buttons theme="circles-dark"
+                   [include]="['whatsapp','facebook','twitter','email','copy']"
+                   [showIcon]="true"
+                   [showText]="false"
+                   [url]=sharingUrl
+                   [description]=sharingText
+                   twitterAccount="mediateurcultureluqtr"
+                   class="pt-5">
+    </share-buttons>
+        </ion-col>
+      </ion-row>
+</div>
+    <ion-button class="btn" (click)="closeModal()" fill="clear">
+      Annuler
+    </ion-button>
+
+  </div>
+</div>

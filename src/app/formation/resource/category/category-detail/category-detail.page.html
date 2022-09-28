@@ -1,0 +1,266 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="resource/category"></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+           <span class="material-icons blue ">
+                {{resAvatar}}
+           </span>
+            {{resource.ressDesc}}
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+
+    <div>
+        <div class="example-loading-shade"
+             *ngIf="isLoadingResults">
+            <mat-progress-spinner *ngIf="isLoadingResults"></mat-progress-spinner>
+        </div>
+        <mat-card class="example-card" no-padding no-margin>
+            <mat-card-header>
+                <mat-card-title><h2></h2></mat-card-title>
+                <mat-card-subtitle></mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <ion-grid>
+                    <ion-row>
+                        <ion-button href="{{resource.ressUrl}}" target="_blank" class="alignLeft">
+                        <span class="material-icons ">
+                           remove_red_eye
+                        </span>
+                            <div class="padding">Site web</div>
+                        </ion-button>
+
+                        <div class="iconePosition allWidth">
+                            <a mat-flat-button *ngIf="dejaFavoris==false" (click)="saveFavoris(resource.id)"
+                               style="cursor: pointer;">
+                                <mat-icon>
+                                    <span class="material-icons secondary">
+                                              star_border
+                                </span>
+                                </mat-icon>
+                            </a>
+                            <a mat-flat-button *ngIf="dejaFavoris==true" style="opacity:.5">
+                                <mat-icon>
+                                    <span class="material-icons secondary">
+                                          star
+                            </span>
+                                </mat-icon>
+                            </a>
+                            <a mat-flat-button style="cursor: pointer;" (click)="showShareOptions()">
+                                <mat-icon>
+                                    <span class="material-icons secondary">
+
+                                          share
+                                    </span>
+                                </mat-icon>
+                            </a>
+
+                        </div>
+                    </ion-row>
+                </ion-grid>
+
+
+                <dl *ngIf="typeRes=='Lieux'">
+                    <mat-divider></mat-divider>
+                    <div class="gras title">
+                        Adresse:
+                        <!--{{resource.ResDesc}}:-->
+                    </div>
+                    <div>{{resource.ressLieu}}</div>
+                    <div>{{resource.ressVille}}</div>
+                    <div>{{resource.ressCodeP}}</div>
+
+                </dl>
+                <mat-divider></mat-divider>
+                <ion-grid>
+                    <ion-row class="gras title">
+                        Utilisée dans:
+                    </ion-row>
+                    <ion-row>
+                        <div *ngFor="let sess of session;let j = index;let ls = last; let fs = first;">
+                            <div *ngFor="let a of cours|sessObject:sess;let i = index;let lst = last; let fst = first;"
+                                 class="div">
+                                <div *ngIf="fst&&fs&&showMore==false" class="decale_titreCours">
+                                    <ion-item-divider *ngIf="fst">{{sess.sessNom}}</ion-item-divider>
+                                    <div class="gras">{{a.coursResCours.coursDes + ",   " + a.coursResCours.coursNomCourt + ",  Formateur: " + a.coursResProf.profFirstName + " " + a.coursResProf.profLastName}}</div>
+                                    <div >
+                                        {{a.coursResIntention}}
+                                    </div>
+                                    <div class="showCours">
+                                        <a *ngIf="courslength>1" [routerLink]="" (click)="MoreLessCour()"
+                                           class="showCoursbutton">
+                                            Plus
+                                        </a>
+                                    </div>
+                                </div>
+                                <div *ngIf="showMore==true" class="decale_titreCours">
+                                    <ion-item-divider *ngIf="fst">{{sess.sessNom}}</ion-item-divider>
+                                    <div class="gras">{{a.coursResCours.coursDes + ",   " + a.coursResCours.coursNomCourt + ",  Formateur: " + a.coursResProf.profFirstName + " " + a.coursResProf.profLastName}}</div>
+                                    <div>
+                                        {{a.coursResIntention}}
+                                    </div>
+                                    <div class="showCours">
+                                        <a *ngIf="lst&&ls&&courslength>1" [routerLink]="" (click)="MoreLessCour()"
+                                           class="showCoursbutton">Moins</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div *ngIf="courslength==0">
+                            Aucun cours n'utilise cette ressource
+
+                        </div>
+                    </ion-row>
+                </ion-grid>
+            </mat-card-content>
+        </mat-card>
+        <mat-divider></mat-divider>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header class="gras title">
+                <mat-panel-title>
+                    Notes personnelles
+                    <span class="material-icons secondary space" (click)="addNote(resource.id)">
+                    add_circle
+                    </span>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <ion-row *ngIf="noteLength==0">
+                Aucune note personnelle sur cette ressource
+            </ion-row>
+            <ion-list *ngIf="noteLength>0">
+
+                <ion-item *ngFor="let note of notes">
+                    <div class="winWidth">
+                        <div mat-line class="entete">
+                            <div class="date gras" (click)="editNote(note)">
+                                {{ note.noteDate | date: 'dd/MM/yyyy ' }}
+                            </div>
+                            <div class="dell">
+                                <a mat-flat-button>
+                                    <mat-icon>
+                                      <span class="material-icons" (click)="delNote(note.id)">
+                                        delete_forever
+                                        </span>
+                                    </mat-icon>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div mat-line>
+                            <a mat-flat-button class="note" (click)="editNote(note)">
+                                {{ note.noteDesc }}
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="chevron" (click)="editNote(note)">
+
+                    </div>
+
+                </ion-item>
+
+
+            </ion-list>
+        </mat-expansion-panel>
+        <mat-divider></mat-divider>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header class="gras title">
+                <mat-panel-title>
+                    Commentaires publics
+                    <span class="material-icons secondary space" (click)="addComment(resource.id)">
+                    add_circle
+                    </span>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ion-row *ngIf="commentlength==0">
+                Aucun commentaire public sur cette ressource
+            </ion-row>
+            <ion-list *ngIf="commentlength>0">
+
+                <ion-item *ngFor="let commentAndUser of commentAndUsers">
+
+                    <div class="winWidth">
+
+                        <div mat-line class="entete">
+                            <div mat-line class="date gras" (click)="editComment(commentAndUser.comment)"
+                                 *ngIf="commentAndUser.comment.commentUser.idUsers==currentUser.idUsers">
+                                @Vous
+                            </div>
+
+                            <div mat-line class="date gras nom"
+                                 *ngIf="commentAndUser.comment.commentUser.idUsers!=currentUser.idUsers">
+                                @{{commentAndUser.comment.commentUser.firstname + " " + commentAndUser.comment.commentUser.lastname}}
+                            </div>
+
+                            <div class="dell" *ngIf="commentAndUser.comment.commentUser.idUsers==currentUser.idUsers">
+                                <a mat-flat-button>
+                                    <mat-icon>
+                                      <span class="material-icons" (click)="deleteComment(commentAndUser.comment.id)">
+                                        delete_forever
+                                        </span>
+                                    </mat-icon>
+                                </a>
+                            </div>
+                            <div class="dellDisable"
+                                 *ngIf="commentAndUser.comment.commentUser.idUsers!=currentUser.idUsers">
+                                <a mat-flat-button>
+                                    <mat-icon>
+                                      <span class="material-icons">
+                                        delete_forever
+                                        </span>
+                                    </mat-icon>
+                                </a>
+                            </div>
+                            <div class="dureCurrent"
+                                 *ngIf="commentAndUser.comment.commentUser.idUsers==currentUser.idUsers">
+                                {{ commentAndUser.depuis }}
+
+                            </div>
+                        </div>
+
+                        <div class="dure" *ngIf="commentAndUser.comment.commentUser.idUsers!=currentUser.idUsers">
+                            {{ commentAndUser.depuis }}
+
+                        </div>
+
+                        <div mat-line *ngIf="commentAndUser.comment.commentUser.idUsers==currentUser.idUsers">
+
+                            <a mat-flat-button class="note" (click)="editComment(commentAndUser.comment)">
+                                {{ commentAndUser.comment.commentDesc }}
+                            </a>
+
+                        </div>
+                        <div mat-line *ngIf="commentAndUser.comment.commentUser.idUsers!=currentUser.idUsers">
+
+                            <a mat-flat-button class="note">
+                                {{ commentAndUser.comment.commentDesc }}
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="chevron" (click)="editComment(commentAndUser.comment)"
+                         *ngIf="commentAndUser.comment.commentUser.idUsers==currentUser.idUsers">
+
+                    </div>
+                    <div class="chevron" *ngIf="commentAndUser.comment.commentUser.idUsers!=currentUser.idUsers">
+
+                    </div>
+
+                </ion-item>
+
+
+            </ion-list>
+        </mat-expansion-panel>
+    </div>
+</ion-content>
+

@@ -1,0 +1,37 @@
+<ion-header >
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="end">
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <span class="material-icons cursor" (click)="closeModal()" style="...">
+       <span class="material-icons">
+        arrow_back
+      </span>
+        </span>
+    </ion-buttons>
+    <ion-title>
+      A propos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-item lines="none" >
+    <ion-label class="item" text-wrap>L’application eCompagnon culturel se veut la mémoire de vos expériences culturelles lors de votre formation, en lien avec le programme La culture à l’école et le Répertoire culture-éducation, notamment. Elle vous offre la possibilité d’accéder :  (i) aux ressources culturelles mobilisées dans différents cours; (ii) aux intentions pédagogiques qui y sont associées; et (iii) aux commentaires d’autres étudiant.e.s concernant l’utilisation de ces ressources au préscolaire et au primaire.
+      Elle a été conçue pour les programmes de formation à l’éducation préscolaire et l’enseignement primaire de l’UQTR. </ion-label>
+  </ion-item>
+  <ion-item lines="none" >
+    <ion-label class="title">Développeurs:</ion-label>
+  </ion-item>
+  <ion-item lines="none" >
+    <ion-label class="item" text-wrap>Université du Québec à Trois-Rivières, Laboratoire de recherche sur les publics de la culture et Groupe de recherche transdisciplinaire
+      des troubles de comportement alimentaire, avec l’appui financier du ministère de la Culture et des Communications et de la Fondation de l’UQTR (2020-2024).</ion-label>
+  </ion-item>
+  <ion-item lines="none" >
+    <ion-label class="item-left" text-wrap>Version {{version}} ({{date}}).</ion-label>
+  </ion-item>
+ <!-- <ion-button class="btn" (click)="closeModal()" fill="clear">
+    Fermer
+  </ion-button>-->
+</ion-content>
+
+

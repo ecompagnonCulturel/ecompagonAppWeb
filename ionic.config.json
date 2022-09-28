@@ -1,0 +1,8 @@
+{
+  "name": "authentification",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

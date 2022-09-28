@@ -1,0 +1,41 @@
+<ion-header>
+    Ajouter/modifier  un commentaire public
+</ion-header>
+
+
+<ion-content >
+    <mat-card>
+        <div>
+            <div>
+                <form (ngSubmit)="submit()" [formGroup]="commentForm">
+                    <div class="input-group">
+                        <ion-item>
+                            <ion-textarea formControlName="commentDesc" name="commentDesc" id="commentDesc"
+                                          type="text" cols="10" rows="14" >
+                            </ion-textarea>
+                        </ion-item>
+                        <div *ngIf="(commentDesc.dirty|| commentDesc.touched) && commentDesc.errors" class="errors">
+                            <span *ngIf="commentDesc.errors?.required">Commentaire  obligatoire</span>
+                            <span *ngIf="commentDesc.errors?.maxlength">Au plus 1499 caractères</span>
+                        </div>
+                    </div>
+                    <mat-card-footer>
+                        <div class="right">
+                            <ion-button [disabled]="!commentForm.valid"  type="submit">
+                                <span class="green">OK</span>
+                            </ion-button>
+
+                        </div>
+                        <div class="left">
+                            <ion-button (click)="closeDialog()" type="button" >
+                                <span class="red">Annuler</span>
+                            </ion-button>
+                        </div>
+
+                    </mat-card-footer>
+
+                </form>
+            </div>
+        </div>
+    </mat-card>
+</ion-content>

@@ -1,0 +1,83 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "users": {
+        "idUsers": 1,
+        "nameUsers": "Beryl",
+        "mailUsers": "elcarinacours@uqtr.ca",
+        "statusUsers": 1
+      },
+      "profile": {
+        "idProfile": 1,
+        "descProfile": "Formateur",
+        "status": 1
+      },
+      "passwordAccount": "123",
+      "creationDateAccount": "2020-12-14T21:15:35.763Z",
+      "updateDateAccount": "2020-12-14T02:29:02.110Z",
+      "statusAccount": 1
+    },
+    {
+      "id": 2,
+      "users": {
+        "idUsers": 1,
+        "nameUsers": "Beryl",
+        "mailUsers": "Jerrold83@gmail.com",
+        "statusUsers": 1
+      },
+      "profile": {
+        "idProfile": 2,
+        "descProfile": "Etudiant",
+        "status": 1
+      },
+      "passwordAccount": "Etudiant",
+      "creationDateAccount": "2020-12-14T03:31:41.360Z",
+      "updateDateAccount": "2020-12-14T23:09:24.629Z",
+      "statusAccount": 1
+    },
+    {
+      "id": 3,
+      "users": {
+        "idUsers": 9,
+        "nameUsers": "Thora",
+        "mailUsers": "Carolanne_Ryan@hotmail.com",
+        "statusUsers": 1
+      },
+      "profile": {
+        "idProfile": 1,
+        "descProfile": "Formateur",
+        "status": 1
+      },
+      "passwordAccount": "Chercheur",
+      "creationDateAccount": "2020-12-13T23:49:07.394Z",
+      "updateDateAccount": "2020-12-14T03:03:09.090Z",
+      "statusAccount": 1
+    },
+    {
+      "id": 4,
+      "users": {
+        "idUsers": 5,
+        "nameUsers": "Lela",
+        "mailUsers": "Garnet_Kris5@yahoo.com",
+        "statusUsers": 1
+      },
+      "profile": {
+        "idProfile": 2,
+        "descProfile": "Etudiant",
+        "status": 1
+      },
+      "passwordAccount": "Administrateur",
+      "creationDateAccount": "2020-12-14T10:55:57.308Z",
+      "updateDateAccount": "2020-12-14T06:47:56.468Z",
+      "statusAccount": 1
+    },
+    {
+      "mailUsers": "papa@papa.com",
+      "nameUsers": "dfdfg",
+      "passwordAccount": "dfdf",
+      "statusAccount": 0,
+      "id": 5
+    }
+  ]
+}
