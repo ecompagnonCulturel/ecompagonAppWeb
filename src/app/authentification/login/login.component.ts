@@ -86,7 +86,7 @@ export class LoginComponent implements OnInit {
                 if (err.error.message === 'BAD_CREDENTIAL') {
                     this.utilService.errorAlert('Connexion', 'Courriel ou mot de passe incorrect');
                 } else if (err.error.message === 'ACCOUNT_DISABLED') {
-                    this.utilService.errorAlert('Connexion', 'Ce compte n\'est pas encore est activé.Vous pouvez Renvoyer un nouveau courriel d\'activation');
+                    this.utilService.errorAlert('Connexion', 'Ce compte n\'est pas encore activé.Vous pouvez Renvoyer un nouveau courriel d\'activation');
                     this.router.navigateByUrl('/resendmail', {replaceUrl: true});
                 } else /*if (err.error.message === 'Ce compte n\'existe pas') */
                 {
